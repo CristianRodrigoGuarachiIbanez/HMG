@@ -1066,7 +1066,7 @@ typedef struct {
 typedef unsigned char __pyx_t_10visualizer_uchar;
 
 /*--- Type declarations ---*/
-struct __pyx_obj_10visualizer_GVisualizer;
+struct __pyx_obj_10visualizer_GlimpseConstructor;
 struct __pyx_array_obj;
 struct __pyx_MemviewEnum_obj;
 struct __pyx_memoryview_obj;
@@ -1088,13 +1088,13 @@ struct __pyx_t_10visualizer_Points {
 /* "GlimpseVisualizer.pyx":16
  *     int end
  * 
- * cdef class GVisualizer:             # <<<<<<<<<<<<<<
+ * cdef class GlimpseConstructor:             # <<<<<<<<<<<<<<
  *     cdef:
  *         uchar **** heat_maps
  */
-struct __pyx_obj_10visualizer_GVisualizer {
+struct __pyx_obj_10visualizer_GlimpseConstructor {
   PyObject_HEAD
-  struct __pyx_vtabstruct_10visualizer_GVisualizer *__pyx_vtab;
+  struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *__pyx_vtab;
   __pyx_t_10visualizer_uchar ****heat_maps;
   size_t dim1;
   size_t dim2;
@@ -1185,26 +1185,26 @@ struct __pyx_memoryviewslice_obj {
 /* "GlimpseVisualizer.pyx":16
  *     int end
  * 
- * cdef class GVisualizer:             # <<<<<<<<<<<<<<
+ * cdef class GlimpseConstructor:             # <<<<<<<<<<<<<<
  *     cdef:
  *         uchar **** heat_maps
  */
 
-struct __pyx_vtabstruct_10visualizer_GVisualizer {
-  void (*setFeatureDimensions)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice);
-  void (*setOutputDimensions)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, __Pyx_memviewslice, __Pyx_memviewslice);
-  void (*populate_heatmaps)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t);
-  void (*zeros)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t);
-  int (*max_elements)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice, size_t);
-  void (*set_ones)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int);
-  std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  (*bb_dimensions)(struct __pyx_obj_10visualizer_GVisualizer *, int, int, int, int, __Pyx_memviewslice, int);
-  void (*create_heatmaps)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice, __Pyx_memviewslice);
-  __Pyx_memviewslice (*convert_heatmap)(struct __pyx_obj_10visualizer_GVisualizer *);
+struct __pyx_vtabstruct_10visualizer_GlimpseConstructor {
+  void (*setFeatureDimensions)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice);
+  void (*setOutputDimensions)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, __Pyx_memviewslice, __Pyx_memviewslice);
+  void (*populate_heatmaps)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t);
+  void (*zeros)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t);
+  int (*max_elements)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice, size_t);
+  void (*set_ones)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int);
+  std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  (*bb_dimensions)(struct __pyx_obj_10visualizer_GlimpseConstructor *, int, int, int, int, __Pyx_memviewslice, int);
+  void (*create_heatmaps)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice, __Pyx_memviewslice);
+  __Pyx_memviewslice (*convert_heatmap)(struct __pyx_obj_10visualizer_GlimpseConstructor *);
 };
-static struct __pyx_vtabstruct_10visualizer_GVisualizer *__pyx_vtabptr_10visualizer_GVisualizer;
-static CYTHON_INLINE int __pyx_f_10visualizer_11GVisualizer_max_elements(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice, size_t);
-static CYTHON_INLINE void __pyx_f_10visualizer_11GVisualizer_set_ones(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int);
-static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_11GVisualizer_bb_dimensions(struct __pyx_obj_10visualizer_GVisualizer *, int, int, int, int, __Pyx_memviewslice, int);
+static struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *__pyx_vtabptr_10visualizer_GlimpseConstructor;
+static CYTHON_INLINE int __pyx_f_10visualizer_18GlimpseConstructor_max_elements(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice, size_t);
+static CYTHON_INLINE void __pyx_f_10visualizer_18GlimpseConstructor_set_ones(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int);
+static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_18GlimpseConstructor_bb_dimensions(struct __pyx_obj_10visualizer_GlimpseConstructor *, int, int, int, int, __Pyx_memviewslice, int);
 
 
 /* "View.MemoryView":105
@@ -1366,47 +1366,6 @@ static CYTHON_INLINE int __pyx_sub_acquisition_count_locked(
 static CYTHON_INLINE void __Pyx_INC_MEMVIEW(__Pyx_memviewslice *, int, int);
 static CYTHON_INLINE void __Pyx_XDEC_MEMVIEW(__Pyx_memviewslice *, int, int);
 
-/* PyThreadStateGet.proto */
-#if CYTHON_FAST_THREAD_STATE
-#define __Pyx_PyThreadState_declare  PyThreadState *__pyx_tstate;
-#define __Pyx_PyThreadState_assign  __pyx_tstate = __Pyx_PyThreadState_Current;
-#define __Pyx_PyErr_Occurred()  __pyx_tstate->curexc_type
-#else
-#define __Pyx_PyThreadState_declare
-#define __Pyx_PyThreadState_assign
-#define __Pyx_PyErr_Occurred()  PyErr_Occurred()
-#endif
-
-/* PyErrFetchRestore.proto */
-#if CYTHON_FAST_THREAD_STATE
-#define __Pyx_PyErr_Clear() __Pyx_ErrRestore(NULL, NULL, NULL)
-#define __Pyx_ErrRestoreWithState(type, value, tb)  __Pyx_ErrRestoreInState(PyThreadState_GET(), type, value, tb)
-#define __Pyx_ErrFetchWithState(type, value, tb)    __Pyx_ErrFetchInState(PyThreadState_GET(), type, value, tb)
-#define __Pyx_ErrRestore(type, value, tb)  __Pyx_ErrRestoreInState(__pyx_tstate, type, value, tb)
-#define __Pyx_ErrFetch(type, value, tb)    __Pyx_ErrFetchInState(__pyx_tstate, type, value, tb)
-static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb);
-static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb);
-#if CYTHON_COMPILING_IN_CPYTHON
-#define __Pyx_PyErr_SetNone(exc) (Py_INCREF(exc), __Pyx_ErrRestore((exc), NULL, NULL))
-#else
-#define __Pyx_PyErr_SetNone(exc) PyErr_SetNone(exc)
-#endif
-#else
-#define __Pyx_PyErr_Clear() PyErr_Clear()
-#define __Pyx_PyErr_SetNone(exc) PyErr_SetNone(exc)
-#define __Pyx_ErrRestoreWithState(type, value, tb)  PyErr_Restore(type, value, tb)
-#define __Pyx_ErrFetchWithState(type, value, tb)  PyErr_Fetch(type, value, tb)
-#define __Pyx_ErrRestoreInState(tstate, type, value, tb)  PyErr_Restore(type, value, tb)
-#define __Pyx_ErrFetchInState(tstate, type, value, tb)  PyErr_Fetch(type, value, tb)
-#define __Pyx_ErrRestore(type, value, tb)  PyErr_Restore(type, value, tb)
-#define __Pyx_ErrFetch(type, value, tb)  PyErr_Fetch(type, value, tb)
-#endif
-
-/* WriteUnraisableException.proto */
-static void __Pyx_WriteUnraisable(const char *name, int clineno,
-                                  int lineno, const char *filename,
-                                  int full_traceback, int nogil);
-
 /* PyDictVersioning.proto */
 #if CYTHON_USE_DICT_VERSIONS && CYTHON_USE_TYPE_SLOTS
 #define __PYX_DICT_VERSION_INIT  ((PY_UINT64_T) -1)
@@ -1454,22 +1413,6 @@ static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_ve
 static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name);
 #endif
 
-/* PyObjectCall.proto */
-#if CYTHON_COMPILING_IN_CPYTHON
-static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw);
-#else
-#define __Pyx_PyObject_Call(func, arg, kw) PyObject_Call(func, arg, kw)
-#endif
-
-/* RaiseException.proto */
-static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb, PyObject *cause);
-
-/* ArgTypeTest.proto */
-#define __Pyx_ArgTypeTest(obj, type, none_allowed, name, exact)\
-    ((likely((Py_TYPE(obj) == type) | (none_allowed && (obj == Py_None)))) ? 1 :\
-        __Pyx__ArgTypeTest(obj, type, name, exact))
-static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *name, int exact);
-
 /* PyCFunctionFastCall.proto */
 #if CYTHON_FAST_PYCCALL
 static CYTHON_INLINE PyObject *__Pyx_PyCFunction_FastCall(PyObject *func, PyObject **args, Py_ssize_t nargs);
@@ -1502,6 +1445,13 @@ static PyObject *__Pyx_PyFunction_FastCallDict(PyObject *func, PyObject **args, 
 #endif // CYTHON_FAST_PYCALL
 #endif
 
+/* PyObjectCall.proto */
+#if CYTHON_COMPILING_IN_CPYTHON
+static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw);
+#else
+#define __Pyx_PyObject_Call(func, arg, kw) PyObject_Call(func, arg, kw)
+#endif
+
 /* PyObjectCall2Args.proto */
 static CYTHON_UNUSED PyObject* __Pyx_PyObject_Call2Args(PyObject* function, PyObject* arg1, PyObject* arg2);
 
@@ -1512,6 +1462,56 @@ static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject
 
 /* PyObjectCallOneArg.proto */
 static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg);
+
+/* PyThreadStateGet.proto */
+#if CYTHON_FAST_THREAD_STATE
+#define __Pyx_PyThreadState_declare  PyThreadState *__pyx_tstate;
+#define __Pyx_PyThreadState_assign  __pyx_tstate = __Pyx_PyThreadState_Current;
+#define __Pyx_PyErr_Occurred()  __pyx_tstate->curexc_type
+#else
+#define __Pyx_PyThreadState_declare
+#define __Pyx_PyThreadState_assign
+#define __Pyx_PyErr_Occurred()  PyErr_Occurred()
+#endif
+
+/* PyErrFetchRestore.proto */
+#if CYTHON_FAST_THREAD_STATE
+#define __Pyx_PyErr_Clear() __Pyx_ErrRestore(NULL, NULL, NULL)
+#define __Pyx_ErrRestoreWithState(type, value, tb)  __Pyx_ErrRestoreInState(PyThreadState_GET(), type, value, tb)
+#define __Pyx_ErrFetchWithState(type, value, tb)    __Pyx_ErrFetchInState(PyThreadState_GET(), type, value, tb)
+#define __Pyx_ErrRestore(type, value, tb)  __Pyx_ErrRestoreInState(__pyx_tstate, type, value, tb)
+#define __Pyx_ErrFetch(type, value, tb)    __Pyx_ErrFetchInState(__pyx_tstate, type, value, tb)
+static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb);
+static CYTHON_INLINE void __Pyx_ErrFetchInState(PyThreadState *tstate, PyObject **type, PyObject **value, PyObject **tb);
+#if CYTHON_COMPILING_IN_CPYTHON
+#define __Pyx_PyErr_SetNone(exc) (Py_INCREF(exc), __Pyx_ErrRestore((exc), NULL, NULL))
+#else
+#define __Pyx_PyErr_SetNone(exc) PyErr_SetNone(exc)
+#endif
+#else
+#define __Pyx_PyErr_Clear() PyErr_Clear()
+#define __Pyx_PyErr_SetNone(exc) PyErr_SetNone(exc)
+#define __Pyx_ErrRestoreWithState(type, value, tb)  PyErr_Restore(type, value, tb)
+#define __Pyx_ErrFetchWithState(type, value, tb)  PyErr_Fetch(type, value, tb)
+#define __Pyx_ErrRestoreInState(tstate, type, value, tb)  PyErr_Restore(type, value, tb)
+#define __Pyx_ErrFetchInState(tstate, type, value, tb)  PyErr_Fetch(type, value, tb)
+#define __Pyx_ErrRestore(type, value, tb)  PyErr_Restore(type, value, tb)
+#define __Pyx_ErrFetch(type, value, tb)  PyErr_Fetch(type, value, tb)
+#endif
+
+/* WriteUnraisableException.proto */
+static void __Pyx_WriteUnraisable(const char *name, int clineno,
+                                  int lineno, const char *filename,
+                                  int full_traceback, int nogil);
+
+/* RaiseException.proto */
+static void __Pyx_Raise(PyObject *type, PyObject *value, PyObject *tb, PyObject *cause);
+
+/* ArgTypeTest.proto */
+#define __Pyx_ArgTypeTest(obj, type, none_allowed, name, exact)\
+    ((likely((Py_TYPE(obj) == type) | (none_allowed && (obj == Py_None)))) ? 1 :\
+        __Pyx__ArgTypeTest(obj, type, name, exact))
+static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *name, int exact);
 
 /* IncludeStringH.proto */
 #include <string.h>
@@ -1856,12 +1856,12 @@ static PyObject* __pyx_print = 0;
 static PyObject* __pyx_print_kwargs = 0;
 #endif
 
-/* ObjectToMemviewSlice.proto */
-static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsdsdsds_nn___pyx_t_10visualizer_uchar(PyObject *, int writable_flag);
-
 /* MemviewDtypeToObject.proto */
 static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_10visualizer_uchar(const char *itemp);
 static CYTHON_INLINE int __pyx_memview_set_nn___pyx_t_10visualizer_uchar(const char *itemp, PyObject *obj);
+
+/* ObjectToMemviewSlice.proto */
+static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsdsdsds_nn___pyx_t_10visualizer_uchar(PyObject *, int writable_flag);
 
 /* MemviewSliceCopyTemplate.proto */
 static __Pyx_memviewslice
@@ -1903,15 +1903,15 @@ static int __Pyx_check_binary_version(void);
 /* InitStrings.proto */
 static int __Pyx_InitStrings(__Pyx_StringTabEntry *t);
 
-static void __pyx_f_10visualizer_11GVisualizer_setFeatureDimensions(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_features); /* proto*/
-static void __pyx_f_10visualizer_11GVisualizer_setOutputDimensions(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto*/
-static void __pyx_f_10visualizer_11GVisualizer_populate_heatmaps(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols); /* proto*/
-static void __pyx_f_10visualizer_11GVisualizer_zeros(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols); /* proto*/
-static CYTHON_INLINE int __pyx_f_10visualizer_11GVisualizer_max_elements(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_elements, size_t __pyx_v_size); /* proto*/
-static CYTHON_INLINE void __pyx_f_10visualizer_11GVisualizer_set_ones(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_maps, int __pyx_v_index, int __pyx_v_step, int __pyx_v_x, int __pyx_v_w, int __pyx_v_y, int __pyx_v_h); /* proto*/
-static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_11GVisualizer_bb_dimensions(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_w, int __pyx_v_h, __Pyx_memviewslice __pyx_v_bb_o, int __pyx_v_clip); /* proto*/
-static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto*/
-static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self); /* proto*/
+static void __pyx_f_10visualizer_18GlimpseConstructor_setFeatureDimensions(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_features); /* proto*/
+static void __pyx_f_10visualizer_18GlimpseConstructor_setOutputDimensions(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto*/
+static void __pyx_f_10visualizer_18GlimpseConstructor_populate_heatmaps(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols); /* proto*/
+static void __pyx_f_10visualizer_18GlimpseConstructor_zeros(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols); /* proto*/
+static CYTHON_INLINE int __pyx_f_10visualizer_18GlimpseConstructor_max_elements(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_elements, size_t __pyx_v_size); /* proto*/
+static CYTHON_INLINE void __pyx_f_10visualizer_18GlimpseConstructor_set_ones(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_maps, int __pyx_v_index, int __pyx_v_step, int __pyx_v_x, int __pyx_v_w, int __pyx_v_y, int __pyx_v_h); /* proto*/
+static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_18GlimpseConstructor_bb_dimensions(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_w, int __pyx_v_h, __Pyx_memviewslice __pyx_v_bb_o, int __pyx_v_clip); /* proto*/
+static void __pyx_f_10visualizer_18GlimpseConstructor_create_heatmaps(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto*/
+static __Pyx_memviewslice __pyx_f_10visualizer_18GlimpseConstructor_convert_heatmap(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self); /* proto*/
 static PyObject *__pyx_array_get_memview(struct __pyx_array_obj *__pyx_v_self); /* proto*/
 static char *__pyx_memoryview_get_item_pointer(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_index); /* proto*/
 static PyObject *__pyx_memoryview_is_slice(struct __pyx_memoryview_obj *__pyx_v_self, PyObject *__pyx_v_obj); /* proto*/
@@ -1936,7 +1936,7 @@ static PyObject *__pyx_memoryviewslice_assign_item_from_object(struct __pyx_memo
 /* Module declarations from 'libcpp.string' */
 
 /* Module declarations from 'visualizer' */
-static PyTypeObject *__pyx_ptype_10visualizer_GVisualizer = 0;
+static PyTypeObject *__pyx_ptype_10visualizer_GlimpseConstructor = 0;
 static PyTypeObject *__pyx_array_type = 0;
 static PyTypeObject *__pyx_MemviewEnum_type = 0;
 static PyTypeObject *__pyx_memoryview_type = 0;
@@ -2057,7 +2057,6 @@ static const char __pyx_k_ValueError[] = "ValueError";
 static const char __pyx_k_dimensions[] = " dimensions ->";
 static const char __pyx_k_pyx_result[] = "__pyx_result";
 static const char __pyx_k_pyx_vtable[] = "__pyx_vtable__";
-static const char __pyx_k_GVisualizer[] = "GVisualizer";
 static const char __pyx_k_MemoryError[] = "MemoryError";
 static const char __pyx_k_PickleError[] = "PickleError";
 static const char __pyx_k_index_labels[] = "index labels ->";
@@ -2071,6 +2070,7 @@ static const char __pyx_k_dtype_is_object[] = "dtype_is_object";
 static const char __pyx_k_pyx_PickleError[] = "__pyx_PickleError";
 static const char __pyx_k_setstate_cython[] = "__setstate_cython__";
 static const char __pyx_k_pyx_unpickle_Enum[] = "__pyx_unpickle_Enum";
+static const char __pyx_k_GlimpseConstructor[] = "GlimpseConstructor";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_strided_and_direct[] = "<strided and direct>";
 static const char __pyx_k_strided_and_indirect[] = "<strided and indirect>";
@@ -2104,7 +2104,7 @@ static PyObject *__pyx_kp_s_Cannot_create_writable_memory_vi;
 static PyObject *__pyx_kp_s_Cannot_index_with_type_s;
 static PyObject *__pyx_n_s_Ellipsis;
 static PyObject *__pyx_kp_s_Empty_shape_tuple_for_cython_arr;
-static PyObject *__pyx_n_s_GVisualizer;
+static PyObject *__pyx_n_s_GlimpseConstructor;
 static PyObject *__pyx_kp_s_Incompatible_checksums_s_vs_0xb0;
 static PyObject *__pyx_n_s_IndexError;
 static PyObject *__pyx_kp_s_Indirect_dimensions_not_supporte;
@@ -2198,11 +2198,11 @@ static PyObject *__pyx_kp_s_unable_to_allocate_shape_and_str;
 static PyObject *__pyx_n_s_unpack;
 static PyObject *__pyx_n_s_update;
 static PyObject *__pyx_n_s_zeros;
-static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto */
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_2__deallocate__(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self); /* proto */
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
+static int __pyx_pf_10visualizer_18GlimpseConstructor___cinit__(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions); /* proto */
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_2__deallocate__(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_4get_heatmap(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self); /* proto */
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
 static void __pyx_array___pyx_pf_15View_dot_MemoryView_5array_4__dealloc__(struct __pyx_array_obj *__pyx_v_self); /* proto */
@@ -2245,7 +2245,7 @@ static PyObject *__pyx_pf_15View_dot_MemoryView_16_memoryviewslice_4base___get__
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_tp_new_10visualizer_GVisualizer(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
+static PyObject *__pyx_tp_new_10visualizer_GlimpseConstructor(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -2292,8 +2292,8 @@ static PyObject *__pyx_codeobj__27;
  */
 
 /* Python wrapper */
-static int __pyx_pw_10visualizer_11GVisualizer_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static int __pyx_pw_10visualizer_11GVisualizer_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
+static int __pyx_pw_10visualizer_18GlimpseConstructor_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
+static int __pyx_pw_10visualizer_18GlimpseConstructor_1__cinit__(PyObject *__pyx_v_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   __Pyx_memviewslice __pyx_v_features = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_labels = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_positions = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -2355,18 +2355,18 @@ static int __pyx_pw_10visualizer_11GVisualizer_1__cinit__(PyObject *__pyx_v_self
   __pyx_L5_argtuple_error:;
   __Pyx_RaiseArgtupleInvalid("__cinit__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 21, __pyx_L3_error)
   __pyx_L3_error:;
-  __Pyx_AddTraceback("visualizer.GVisualizer.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return -1;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_10visualizer_11GVisualizer___cinit__(((struct __pyx_obj_10visualizer_GVisualizer *)__pyx_v_self), __pyx_v_features, __pyx_v_labels, __pyx_v_positions);
+  __pyx_r = __pyx_pf_10visualizer_18GlimpseConstructor___cinit__(((struct __pyx_obj_10visualizer_GlimpseConstructor *)__pyx_v_self), __pyx_v_features, __pyx_v_labels, __pyx_v_positions);
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
+static int __pyx_pf_10visualizer_18GlimpseConstructor___cinit__(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
   int __pyx_r;
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
@@ -2382,7 +2382,7 @@ static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visu
  *         self.heat_maps = <unsigned char****>malloc(labels.shape[2]*sizeof(unsigned char***))
  *         self.setOutputDimensions(self.heat_maps, labels, positions)
  */
-  ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->setFeatureDimensions(__pyx_v_self, __pyx_v_features);
+  ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->setFeatureDimensions(__pyx_v_self, __pyx_v_features);
 
   /* "GlimpseVisualizer.pyx":23
  *     def __cinit__(self, uchar[:,:,:,:,:] features, uchar[:,:,:] labels, double[:,:,:] positions):
@@ -2400,7 +2400,7 @@ static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visu
  *         self.create_heatmaps(labels, positions)
  *         if(self.heat_maps==NULL):
  */
-  ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->setOutputDimensions(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_labels, __pyx_v_positions);
+  ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->setOutputDimensions(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_labels, __pyx_v_positions);
 
   /* "GlimpseVisualizer.pyx":25
  *         self.heat_maps = <unsigned char****>malloc(labels.shape[2]*sizeof(unsigned char***))
@@ -2409,7 +2409,7 @@ static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visu
  *         if(self.heat_maps==NULL):
  *             raise MemoryError()
  */
-  ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->create_heatmaps(__pyx_v_self, __pyx_v_labels, __pyx_v_positions);
+  ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->create_heatmaps(__pyx_v_self, __pyx_v_labels, __pyx_v_positions);
 
   /* "GlimpseVisualizer.pyx":26
  *         self.setOutputDimensions(self.heat_maps, labels, positions)
@@ -2451,7 +2451,7 @@ static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visu
   __pyx_r = 0;
   goto __pyx_L0;
   __pyx_L1_error:;
-  __Pyx_AddTraceback("visualizer.GVisualizer.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.__cinit__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = -1;
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_features, 1);
@@ -2470,19 +2470,19 @@ static int __pyx_pf_10visualizer_11GVisualizer___cinit__(struct __pyx_obj_10visu
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_3__deallocate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_3__deallocate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_3__deallocate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_3__deallocate__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__deallocate__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10visualizer_11GVisualizer_2__deallocate__(((struct __pyx_obj_10visualizer_GVisualizer *)__pyx_v_self));
+  __pyx_r = __pyx_pf_10visualizer_18GlimpseConstructor_2__deallocate__(((struct __pyx_obj_10visualizer_GlimpseConstructor *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_2__deallocate__(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self) {
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_2__deallocate__(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__deallocate__", 0);
@@ -2519,7 +2519,7 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_2__deallocate__(struct __py
  *             self.dim3 = features.shape[3] # 120
  */
 
-static void __pyx_f_10visualizer_11GVisualizer_setFeatureDimensions(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_features) {
+static void __pyx_f_10visualizer_18GlimpseConstructor_setFeatureDimensions(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_features) {
   __Pyx_RefNannyDeclarations
   int __pyx_t_1;
   __Pyx_RefNannySetupContext("setFeatureDimensions", 0);
@@ -2603,7 +2603,7 @@ static void __pyx_f_10visualizer_11GVisualizer_setFeatureDimensions(struct __pyx
  *         self.dim1= labels.shape[2] # 6
  */
 
-static void __pyx_f_10visualizer_11GVisualizer_setOutputDimensions(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
+static void __pyx_f_10visualizer_18GlimpseConstructor_setOutputDimensions(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_features, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("setOutputDimensions", 0);
 
@@ -2641,7 +2641,7 @@ static void __pyx_f_10visualizer_11GVisualizer_setOutputDimensions(struct __pyx_
  *     @boundscheck(False)
  *     @wraparound(False)
  */
-  ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->populate_heatmaps(__pyx_v_self, __pyx_v_features, __pyx_v_self->dim1, __pyx_v_self->dim2, __pyx_v_self->dim3, __pyx_v_self->dim4);
+  ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->populate_heatmaps(__pyx_v_self, __pyx_v_features, __pyx_v_self->dim1, __pyx_v_self->dim2, __pyx_v_self->dim3, __pyx_v_self->dim4);
 
   /* "GlimpseVisualizer.pyx":40
  *     @wraparound(False)
@@ -2663,7 +2663,7 @@ static void __pyx_f_10visualizer_11GVisualizer_setOutputDimensions(struct __pyx_
  *         for i in range(dim):
  */
 
-static void __pyx_f_10visualizer_11GVisualizer_populate_heatmaps(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols) {
+static void __pyx_f_10visualizer_18GlimpseConstructor_populate_heatmaps(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -2752,7 +2752,7 @@ static void __pyx_f_10visualizer_11GVisualizer_populate_heatmaps(struct __pyx_ob
  *     @boundscheck(False)
  *     @wraparound(False)
  */
-  ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->zeros(__pyx_v_self, __pyx_v_heat_map, __pyx_v_dim, __pyx_v_dim1, __pyx_v_rows, __pyx_v_cols);
+  ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->zeros(__pyx_v_self, __pyx_v_heat_map, __pyx_v_dim, __pyx_v_dim1, __pyx_v_rows, __pyx_v_cols);
 
   /* "GlimpseVisualizer.pyx":48
  *     @wraparound(False)
@@ -2774,7 +2774,7 @@ static void __pyx_f_10visualizer_11GVisualizer_populate_heatmaps(struct __pyx_ob
  *         for i in range(dim):
  */
 
-static void __pyx_f_10visualizer_11GVisualizer_zeros(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols) {
+static void __pyx_f_10visualizer_18GlimpseConstructor_zeros(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_map, size_t __pyx_v_dim, size_t __pyx_v_dim1, size_t __pyx_v_rows, size_t __pyx_v_cols) {
   int __pyx_v_i;
   int __pyx_v_j;
   int __pyx_v_k;
@@ -2875,7 +2875,7 @@ static void __pyx_f_10visualizer_11GVisualizer_zeros(CYTHON_UNUSED struct __pyx_
  *         elem = elements[0]
  */
 
-static CYTHON_INLINE int __pyx_f_10visualizer_11GVisualizer_max_elements(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_elements, size_t __pyx_v_size) {
+static CYTHON_INLINE int __pyx_f_10visualizer_18GlimpseConstructor_max_elements(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_elements, size_t __pyx_v_size) {
   int __pyx_v_i;
   int __pyx_v_elem;
   int __pyx_v_index;
@@ -2991,7 +2991,7 @@ static CYTHON_INLINE int __pyx_f_10visualizer_11GVisualizer_max_elements(CYTHON_
  *         for i in range(y, h):
  */
 
-static CYTHON_INLINE void __pyx_f_10visualizer_11GVisualizer_set_ones(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_maps, int __pyx_v_index, int __pyx_v_step, int __pyx_v_x, int __pyx_v_w, int __pyx_v_y, int __pyx_v_h) {
+static CYTHON_INLINE void __pyx_f_10visualizer_18GlimpseConstructor_set_ones(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __pyx_t_10visualizer_uchar ****&__pyx_v_heat_maps, int __pyx_v_index, int __pyx_v_step, int __pyx_v_x, int __pyx_v_w, int __pyx_v_y, int __pyx_v_h) {
   int __pyx_v_i;
   int __pyx_v_j;
   __Pyx_RefNannyDeclarations
@@ -3058,7 +3058,7 @@ static CYTHON_INLINE void __pyx_f_10visualizer_11GVisualizer_set_ones(CYTHON_UNU
  *             Points limit_1, limit_2
  */
 
-static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_11GVisualizer_bb_dimensions(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_w, int __pyx_v_h, __Pyx_memviewslice __pyx_v_bb_o, int __pyx_v_clip) {
+static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_f_10visualizer_18GlimpseConstructor_bb_dimensions(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, int __pyx_v_x, int __pyx_v_y, int __pyx_v_w, int __pyx_v_h, __Pyx_memviewslice __pyx_v_bb_o, int __pyx_v_clip) {
   struct __pyx_t_10visualizer_Points __pyx_v_limit_1;
   struct __pyx_t_10visualizer_Points __pyx_v_limit_2;
   std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_v_dimensions;
@@ -3290,20 +3290,16 @@ static CYTHON_INLINE std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t
  *         cdef:
  */
 
-static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
+static void __pyx_f_10visualizer_18GlimpseConstructor_create_heatmaps(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, __Pyx_memviewslice __pyx_v_labels, __Pyx_memviewslice __pyx_v_positions) {
   size_t __pyx_v_i;
   size_t __pyx_v_j;
   size_t __pyx_v_k;
-  float __pyx_v_w_f;
-  float __pyx_v_h_f;
-  float __pyx_v_x_f;
-  float __pyx_v_y_f;
-  float __pyx_v_x_p;
-  float __pyx_v_y_p;
   int __pyx_v_x;
   int __pyx_v_w;
   int __pyx_v_y;
   int __pyx_v_h;
+  float __pyx_v_x_c;
+  float __pyx_v_y_c;
   std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  __pyx_v_dimensions;
   __Pyx_memviewslice __pyx_v_bb_o = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_clip;
@@ -3313,15 +3309,15 @@ static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_
   size_t __pyx_t_1;
   size_t __pyx_t_2;
   size_t __pyx_t_3;
-  size_t __pyx_t_4;
-  size_t __pyx_t_5;
+  int __pyx_t_4;
+  int __pyx_t_5;
   size_t __pyx_t_6;
-  int __pyx_t_7;
-  __Pyx_memviewslice __pyx_t_8 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_t_9 = NULL;
+  size_t __pyx_t_7;
+  size_t __pyx_t_8;
+  __Pyx_memviewslice __pyx_t_9 = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_t_10 = NULL;
-  __Pyx_memviewslice __pyx_t_11 = { 0, 0, { 0 }, { 0 }, { 0 } };
-  PyObject *__pyx_t_12 = NULL;
+  PyObject *__pyx_t_11 = NULL;
+  __Pyx_memviewslice __pyx_t_12 = { 0, 0, { 0 }, { 0 }, { 0 } };
   PyObject *__pyx_t_13 = NULL;
   PyObject *__pyx_t_14 = NULL;
   PyObject *__pyx_t_15 = NULL;
@@ -3329,6 +3325,12 @@ static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_
   PyObject *__pyx_t_17 = NULL;
   PyObject *__pyx_t_18 = NULL;
   PyObject *__pyx_t_19 = NULL;
+  PyObject *__pyx_t_20 = NULL;
+  PyObject *__pyx_t_21 = NULL;
+  PyObject *__pyx_t_22 = NULL;
+  size_t __pyx_t_23;
+  size_t __pyx_t_24;
+  size_t __pyx_t_25;
   int __pyx_lineno = 0;
   const char *__pyx_filename = NULL;
   int __pyx_clineno = 0;
@@ -3380,7 +3382,7 @@ static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_
  *             h=0
  *             x=0             # <<<<<<<<<<<<<<
  *             y=0
- *             x_p = 0.0
+ *             if(i>0):
  */
     __pyx_v_x = 0;
 
@@ -3388,149 +3390,236 @@ static void __pyx_f_10visualizer_11GVisualizer_create_heatmaps(struct __pyx_obj_
  *             h=0
  *             x=0
  *             y=0             # <<<<<<<<<<<<<<
- *             x_p = 0.0
- *             y_p = 0.0
+ *             if(i>0):
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
  */
     __pyx_v_y = 0;
 
     /* "GlimpseVisualizer.pyx":139
  *             x=0
  *             y=0
- *             x_p = 0.0             # <<<<<<<<<<<<<<
- *             y_p = 0.0
- *             x_f =0.0
+ *             if(i>0):             # <<<<<<<<<<<<<<
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0
  */
-    __pyx_v_x_p = 0.0;
+    __pyx_t_4 = ((__pyx_v_i > 0) != 0);
+    if (__pyx_t_4) {
 
-    /* "GlimpseVisualizer.pyx":140
+      /* "GlimpseVisualizer.pyx":140
  *             y=0
- *             x_p = 0.0
- *             y_p = 0.0             # <<<<<<<<<<<<<<
- *             x_f =0.0
- *             w_f =0.0
+ *             if(i>0):
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     x_c = 0.0
+ *                 else:
  */
-    __pyx_v_y_p = 0.0;
+      __pyx_t_5 = ((__pyx_v_x > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L7_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_x > (__pyx_v_self->dim4 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L7_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_w > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L7_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_w > (__pyx_v_self->dim4 - 1)) != 0);
+      __pyx_t_4 = __pyx_t_5;
+      __pyx_L7_bool_binop_done:;
+      if (__pyx_t_4) {
 
-    /* "GlimpseVisualizer.pyx":141
- *             x_p = 0.0
- *             y_p = 0.0
- *             x_f =0.0             # <<<<<<<<<<<<<<
- *             w_f =0.0
- *             y_f = 0.0
+        /* "GlimpseVisualizer.pyx":141
+ *             if(i>0):
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0             # <<<<<<<<<<<<<<
+ *                 else:
+ *                     x_c +=3.8
  */
-    __pyx_v_x_f = 0.0;
+        __pyx_v_x_c = 0.0;
 
-    /* "GlimpseVisualizer.pyx":142
- *             y_p = 0.0
- *             x_f =0.0
- *             w_f =0.0             # <<<<<<<<<<<<<<
- *             y_f = 0.0
- *             h_f =0.0
+        /* "GlimpseVisualizer.pyx":140
+ *             y=0
+ *             if(i>0):
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     x_c = 0.0
+ *                 else:
  */
-    __pyx_v_w_f = 0.0;
+        goto __pyx_L6;
+      }
 
-    /* "GlimpseVisualizer.pyx":143
- *             x_f =0.0
- *             w_f =0.0
- *             y_f = 0.0             # <<<<<<<<<<<<<<
- *             h_f =0.0
- *             for j in range(self.images):
+      /* "GlimpseVisualizer.pyx":143
+ *                     x_c = 0.0
+ *                 else:
+ *                     x_c +=3.8             # <<<<<<<<<<<<<<
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+ *                     y_c= 0.0
  */
-    __pyx_v_y_f = 0.0;
+      /*else*/ {
+        __pyx_v_x_c = (__pyx_v_x_c + 3.8);
+      }
+      __pyx_L6:;
 
-    /* "GlimpseVisualizer.pyx":144
- *             w_f =0.0
- *             y_f = 0.0
- *             h_f =0.0             # <<<<<<<<<<<<<<
+      /* "GlimpseVisualizer.pyx":144
+ *                 else:
+ *                     x_c +=3.8
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     y_c= 0.0
+ *                 else:
+ */
+      __pyx_t_5 = ((__pyx_v_y > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L12_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_y > (__pyx_v_self->dim4 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L12_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_h > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L12_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_h > (__pyx_v_self->dim4 - 1)) != 0);
+      __pyx_t_4 = __pyx_t_5;
+      __pyx_L12_bool_binop_done:;
+      if (__pyx_t_4) {
+
+        /* "GlimpseVisualizer.pyx":145
+ *                     x_c +=3.8
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+ *                     y_c= 0.0             # <<<<<<<<<<<<<<
+ *                 else:
+ *                     y_c += 1.5
+ */
+        __pyx_v_y_c = 0.0;
+
+        /* "GlimpseVisualizer.pyx":144
+ *                 else:
+ *                     x_c +=3.8
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     y_c= 0.0
+ *                 else:
+ */
+        goto __pyx_L11;
+      }
+
+      /* "GlimpseVisualizer.pyx":147
+ *                     y_c= 0.0
+ *                 else:
+ *                     y_c += 1.5             # <<<<<<<<<<<<<<
  *             for j in range(self.images):
  *                 if(i<self.dim2):
  */
-    __pyx_v_h_f = 0.0;
+      /*else*/ {
+        __pyx_v_y_c = (__pyx_v_y_c + 1.5);
+      }
+      __pyx_L11:;
 
-    /* "GlimpseVisualizer.pyx":145
- *             y_f = 0.0
- *             h_f =0.0
+      /* "GlimpseVisualizer.pyx":139
+ *             x=0
+ *             y=0
+ *             if(i>0):             # <<<<<<<<<<<<<<
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0
+ */
+    }
+
+    /* "GlimpseVisualizer.pyx":148
+ *                 else:
+ *                     y_c += 1.5
  *             for j in range(self.images):             # <<<<<<<<<<<<<<
  *                 if(i<self.dim2):
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
  */
-    __pyx_t_4 = __pyx_v_self->images;
-    __pyx_t_5 = __pyx_t_4;
-    for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
-      __pyx_v_j = __pyx_t_6;
+    __pyx_t_6 = __pyx_v_self->images;
+    __pyx_t_7 = __pyx_t_6;
+    for (__pyx_t_8 = 0; __pyx_t_8 < __pyx_t_7; __pyx_t_8+=1) {
+      __pyx_v_j = __pyx_t_8;
 
-      /* "GlimpseVisualizer.pyx":146
- *             h_f =0.0
+      /* "GlimpseVisualizer.pyx":149
+ *                     y_c += 1.5
  *             for j in range(self.images):
  *                 if(i<self.dim2):             # <<<<<<<<<<<<<<
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
  *                     if(lab_t>1):
  */
-      __pyx_t_7 = ((__pyx_v_i < __pyx_v_self->dim2) != 0);
-      if (__pyx_t_7) {
+      __pyx_t_4 = ((__pyx_v_i < __pyx_v_self->dim2) != 0);
+      if (__pyx_t_4) {
 
-        /* "GlimpseVisualizer.pyx":147
+        /* "GlimpseVisualizer.pyx":150
  *             for j in range(self.images):
  *                 if(i<self.dim2):
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)             # <<<<<<<<<<<<<<
  *                     if(lab_t>1):
  *                         print("index labels ->", lab_t)
  */
-        __pyx_t_8.data = __pyx_v_labels.data;
-        __pyx_t_8.memview = __pyx_v_labels.memview;
-        __PYX_INC_MEMVIEW(&__pyx_t_8, 0);
+        __pyx_t_9.data = __pyx_v_labels.data;
+        __pyx_t_9.memview = __pyx_v_labels.memview;
+        __PYX_INC_MEMVIEW(&__pyx_t_9, 0);
         {
     Py_ssize_t __pyx_tmp_idx = __pyx_v_j;
     Py_ssize_t __pyx_tmp_stride = __pyx_v_labels.strides[0];
-        __pyx_t_8.data += __pyx_tmp_idx * __pyx_tmp_stride;
+        __pyx_t_9.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
 
 {
     Py_ssize_t __pyx_tmp_idx = __pyx_v_i;
     Py_ssize_t __pyx_tmp_stride = __pyx_v_labels.strides[1];
-        __pyx_t_8.data += __pyx_tmp_idx * __pyx_tmp_stride;
+        __pyx_t_9.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
 
-__pyx_t_8.shape[0] = __pyx_v_labels.shape[2];
-__pyx_t_8.strides[0] = __pyx_v_labels.strides[2];
-    __pyx_t_8.suboffsets[0] = -1;
+__pyx_t_9.shape[0] = __pyx_v_labels.shape[2];
+__pyx_t_9.strides[0] = __pyx_v_labels.strides[2];
+    __pyx_t_9.suboffsets[0] = -1;
 
-__pyx_v_lab_t = __pyx_f_10visualizer_11GVisualizer_max_elements(__pyx_v_self, __pyx_t_8, ((int)__pyx_v_self->dim1));
-        __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-        __pyx_t_8.memview = NULL;
-        __pyx_t_8.data = NULL;
+__pyx_v_lab_t = __pyx_f_10visualizer_18GlimpseConstructor_max_elements(__pyx_v_self, __pyx_t_9, ((int)__pyx_v_self->dim1));
+        __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
+        __pyx_t_9.memview = NULL;
+        __pyx_t_9.data = NULL;
 
-        /* "GlimpseVisualizer.pyx":148
+        /* "GlimpseVisualizer.pyx":151
  *                 if(i<self.dim2):
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
  *                     if(lab_t>1):             # <<<<<<<<<<<<<<
  *                         print("index labels ->", lab_t)
  *                 bb_o = positions[j,i,:]
  */
-        __pyx_t_7 = ((__pyx_v_lab_t > 1) != 0);
-        if (__pyx_t_7) {
+        __pyx_t_4 = ((__pyx_v_lab_t > 1) != 0);
+        if (__pyx_t_4) {
 
-          /* "GlimpseVisualizer.pyx":149
+          /* "GlimpseVisualizer.pyx":152
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
  *                     if(lab_t>1):
  *                         print("index labels ->", lab_t)             # <<<<<<<<<<<<<<
  *                 bb_o = positions[j,i,:]
  *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
  */
-          __pyx_t_9 = __Pyx_PyInt_From_int(__pyx_v_lab_t); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 149, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_9);
-          __pyx_t_10 = PyTuple_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 149, __pyx_L1_error)
+          __pyx_t_10 = __Pyx_PyInt_From_int(__pyx_v_lab_t); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 152, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_10);
+          __pyx_t_11 = PyTuple_New(2); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 152, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_11);
           __Pyx_INCREF(__pyx_kp_s_index_labels);
           __Pyx_GIVEREF(__pyx_kp_s_index_labels);
-          PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_kp_s_index_labels);
-          __Pyx_GIVEREF(__pyx_t_9);
-          PyTuple_SET_ITEM(__pyx_t_10, 1, __pyx_t_9);
-          __pyx_t_9 = 0;
-          if (__Pyx_PrintOne(0, __pyx_t_10) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
-          __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+          PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_kp_s_index_labels);
+          __Pyx_GIVEREF(__pyx_t_10);
+          PyTuple_SET_ITEM(__pyx_t_11, 1, __pyx_t_10);
+          __pyx_t_10 = 0;
+          if (__Pyx_PrintOne(0, __pyx_t_11) < 0) __PYX_ERR(0, 152, __pyx_L1_error)
+          __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-          /* "GlimpseVisualizer.pyx":148
+          /* "GlimpseVisualizer.pyx":151
  *                 if(i<self.dim2):
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
  *                     if(lab_t>1):             # <<<<<<<<<<<<<<
@@ -3539,8 +3628,8 @@ __pyx_v_lab_t = __pyx_f_10visualizer_11GVisualizer_max_elements(__pyx_v_self, __
  */
         }
 
-        /* "GlimpseVisualizer.pyx":146
- *             h_f =0.0
+        /* "GlimpseVisualizer.pyx":149
+ *                     y_c += 1.5
  *             for j in range(self.images):
  *                 if(i<self.dim2):             # <<<<<<<<<<<<<<
  *                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
@@ -3548,416 +3637,526 @@ __pyx_v_lab_t = __pyx_f_10visualizer_11GVisualizer_max_elements(__pyx_v_self, __
  */
       }
 
-      /* "GlimpseVisualizer.pyx":150
+      /* "GlimpseVisualizer.pyx":153
  *                     if(lab_t>1):
  *                         print("index labels ->", lab_t)
  *                 bb_o = positions[j,i,:]             # <<<<<<<<<<<<<<
  *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
- *                 x_f += (<float>dimensions.second.start) + x_p
+ *                 x = <int>((<float>dimensions.second.start)+x_c)
  */
-      __pyx_t_11.data = __pyx_v_positions.data;
-      __pyx_t_11.memview = __pyx_v_positions.memview;
-      __PYX_INC_MEMVIEW(&__pyx_t_11, 0);
+      __pyx_t_12.data = __pyx_v_positions.data;
+      __pyx_t_12.memview = __pyx_v_positions.memview;
+      __PYX_INC_MEMVIEW(&__pyx_t_12, 0);
       {
     Py_ssize_t __pyx_tmp_idx = __pyx_v_j;
     Py_ssize_t __pyx_tmp_stride = __pyx_v_positions.strides[0];
-        __pyx_t_11.data += __pyx_tmp_idx * __pyx_tmp_stride;
+        __pyx_t_12.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
 
 {
     Py_ssize_t __pyx_tmp_idx = __pyx_v_i;
     Py_ssize_t __pyx_tmp_stride = __pyx_v_positions.strides[1];
-        __pyx_t_11.data += __pyx_tmp_idx * __pyx_tmp_stride;
+        __pyx_t_12.data += __pyx_tmp_idx * __pyx_tmp_stride;
 }
 
-__pyx_t_11.shape[0] = __pyx_v_positions.shape[2];
-__pyx_t_11.strides[0] = __pyx_v_positions.strides[2];
-    __pyx_t_11.suboffsets[0] = -1;
+__pyx_t_12.shape[0] = __pyx_v_positions.shape[2];
+__pyx_t_12.strides[0] = __pyx_v_positions.strides[2];
+    __pyx_t_12.suboffsets[0] = -1;
 
 __PYX_XDEC_MEMVIEW(&__pyx_v_bb_o, 1);
-      __pyx_v_bb_o = __pyx_t_11;
-      __pyx_t_11.memview = NULL;
-      __pyx_t_11.data = NULL;
+      __pyx_v_bb_o = __pyx_t_12;
+      __pyx_t_12.memview = NULL;
+      __pyx_t_12.data = NULL;
 
-      /* "GlimpseVisualizer.pyx":151
+      /* "GlimpseVisualizer.pyx":154
  *                         print("index labels ->", lab_t)
  *                 bb_o = positions[j,i,:]
  *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)             # <<<<<<<<<<<<<<
- *                 x_f += (<float>dimensions.second.start) + x_p
- *                 w_f += (<float>dimensions.second.end )+ x_p
+ *                 x = <int>((<float>dimensions.second.start)+x_c)
+ *                 w = <int>((<float>dimensions.second.end) + x_c)
  */
-      __pyx_v_dimensions = __pyx_f_10visualizer_11GVisualizer_bb_dimensions(__pyx_v_self, __pyx_v_x, __pyx_v_y, __pyx_v_w, __pyx_v_h, __pyx_v_bb_o, __pyx_v_clip);
-
-      /* "GlimpseVisualizer.pyx":152
- *                 bb_o = positions[j,i,:]
- *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
- *                 x_f += (<float>dimensions.second.start) + x_p             # <<<<<<<<<<<<<<
- *                 w_f += (<float>dimensions.second.end )+ x_p
- *                 y_f += (<float>dimensions.first.start) + y_p
- */
-      __pyx_v_x_f = (__pyx_v_x_f + (((float)__pyx_v_dimensions.second.start) + __pyx_v_x_p));
-
-      /* "GlimpseVisualizer.pyx":153
- *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
- *                 x_f += (<float>dimensions.second.start) + x_p
- *                 w_f += (<float>dimensions.second.end )+ x_p             # <<<<<<<<<<<<<<
- *                 y_f += (<float>dimensions.first.start) + y_p
- *                 h_f += (<float>dimensions.first.end) + y_p
- */
-      __pyx_v_w_f = (__pyx_v_w_f + (((float)__pyx_v_dimensions.second.end) + __pyx_v_x_p));
-
-      /* "GlimpseVisualizer.pyx":154
- *                 x_f += (<float>dimensions.second.start) + x_p
- *                 w_f += (<float>dimensions.second.end )+ x_p
- *                 y_f += (<float>dimensions.first.start) + y_p             # <<<<<<<<<<<<<<
- *                 h_f += (<float>dimensions.first.end) + y_p
- *                 if(i>4):
- */
-      __pyx_v_y_f = (__pyx_v_y_f + (((float)__pyx_v_dimensions.first.start) + __pyx_v_y_p));
+      __pyx_v_dimensions = __pyx_f_10visualizer_18GlimpseConstructor_bb_dimensions(__pyx_v_self, __pyx_v_x, __pyx_v_y, __pyx_v_w, __pyx_v_h, __pyx_v_bb_o, __pyx_v_clip);
 
       /* "GlimpseVisualizer.pyx":155
- *                 w_f += (<float>dimensions.second.end )+ x_p
- *                 y_f += (<float>dimensions.first.start) + y_p
- *                 h_f += (<float>dimensions.first.end) + y_p             # <<<<<<<<<<<<<<
- *                 if(i>4):
- *                     x_p+=0.1
+ *                 bb_o = positions[j,i,:]
+ *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
+ *                 x = <int>((<float>dimensions.second.start)+x_c)             # <<<<<<<<<<<<<<
+ *                 w = <int>((<float>dimensions.second.end) + x_c)
+ *                 y = <int>((<float>dimensions.first.start)+y_c)
  */
-      __pyx_v_h_f = (__pyx_v_h_f + (((float)__pyx_v_dimensions.first.end) + __pyx_v_y_p));
+      __pyx_v_x = ((int)(((float)__pyx_v_dimensions.second.start) + __pyx_v_x_c));
 
       /* "GlimpseVisualizer.pyx":156
- *                 y_f += (<float>dimensions.first.start) + y_p
- *                 h_f += (<float>dimensions.first.end) + y_p
- *                 if(i>4):             # <<<<<<<<<<<<<<
- *                     x_p+=0.1
- *                     y_p +=0.03
+ *                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
+ *                 x = <int>((<float>dimensions.second.start)+x_c)
+ *                 w = <int>((<float>dimensions.second.end) + x_c)             # <<<<<<<<<<<<<<
+ *                 y = <int>((<float>dimensions.first.start)+y_c)
+ *                 h = <int>((<float>dimensions.first.end)+y_c)
  */
-      __pyx_t_7 = ((__pyx_v_i > 4) != 0);
-      if (__pyx_t_7) {
+      __pyx_v_w = ((int)(((float)__pyx_v_dimensions.second.end) + __pyx_v_x_c));
 
-        /* "GlimpseVisualizer.pyx":157
- *                 h_f += (<float>dimensions.first.end) + y_p
- *                 if(i>4):
- *                     x_p+=0.1             # <<<<<<<<<<<<<<
- *                     y_p +=0.03
- *                 elif(i==2):
+      /* "GlimpseVisualizer.pyx":157
+ *                 x = <int>((<float>dimensions.second.start)+x_c)
+ *                 w = <int>((<float>dimensions.second.end) + x_c)
+ *                 y = <int>((<float>dimensions.first.start)+y_c)             # <<<<<<<<<<<<<<
+ *                 h = <int>((<float>dimensions.first.end)+y_c)
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
  */
-        __pyx_v_x_p = (__pyx_v_x_p + 0.1);
+      __pyx_v_y = ((int)(((float)__pyx_v_dimensions.first.start) + __pyx_v_y_c));
 
-        /* "GlimpseVisualizer.pyx":158
- *                 if(i>4):
- *                     x_p+=0.1
- *                     y_p +=0.03             # <<<<<<<<<<<<<<
- *                 elif(i==2):
- *                     x_p+=0.06
+      /* "GlimpseVisualizer.pyx":158
+ *                 w = <int>((<float>dimensions.second.end) + x_c)
+ *                 y = <int>((<float>dimensions.first.start)+y_c)
+ *                 h = <int>((<float>dimensions.first.end)+y_c)             # <<<<<<<<<<<<<<
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0
  */
-        __pyx_v_y_p = (__pyx_v_y_p + 0.03);
-
-        /* "GlimpseVisualizer.pyx":156
- *                 y_f += (<float>dimensions.first.start) + y_p
- *                 h_f += (<float>dimensions.first.end) + y_p
- *                 if(i>4):             # <<<<<<<<<<<<<<
- *                     x_p+=0.1
- *                     y_p +=0.03
- */
-        goto __pyx_L9;
-      }
+      __pyx_v_h = ((int)(((float)__pyx_v_dimensions.first.end) + __pyx_v_y_c));
 
       /* "GlimpseVisualizer.pyx":159
- *                     x_p+=0.1
- *                     y_p +=0.03
- *                 elif(i==2):             # <<<<<<<<<<<<<<
- *                     x_p+=0.06
- *                     y_p +=0.03
+ *                 y = <int>((<float>dimensions.first.start)+y_c)
+ *                 h = <int>((<float>dimensions.first.end)+y_c)
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     x_c = 0.0
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
  */
-      __pyx_t_7 = ((__pyx_v_i == 2) != 0);
-      if (__pyx_t_7) {
+      __pyx_t_5 = ((__pyx_v_x > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L21_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_x > (__pyx_v_self->dim4 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L21_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_w > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L21_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_w > (__pyx_v_self->dim4 - 1)) != 0);
+      __pyx_t_4 = __pyx_t_5;
+      __pyx_L21_bool_binop_done:;
+      if (__pyx_t_4) {
 
         /* "GlimpseVisualizer.pyx":160
- *                     y_p +=0.03
- *                 elif(i==2):
- *                     x_p+=0.06             # <<<<<<<<<<<<<<
- *                     y_p +=0.03
- *                 elif(i==3):
+ *                 h = <int>((<float>dimensions.first.end)+y_c)
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0             # <<<<<<<<<<<<<<
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+ *                     y_c= 0.0
  */
-        __pyx_v_x_p = (__pyx_v_x_p + 0.06);
-
-        /* "GlimpseVisualizer.pyx":161
- *                 elif(i==2):
- *                     x_p+=0.06
- *                     y_p +=0.03             # <<<<<<<<<<<<<<
- *                 elif(i==3):
- *                     x_p +=0.08
- */
-        __pyx_v_y_p = (__pyx_v_y_p + 0.03);
+        __pyx_v_x_c = 0.0;
 
         /* "GlimpseVisualizer.pyx":159
- *                     x_p+=0.1
- *                     y_p +=0.03
- *                 elif(i==2):             # <<<<<<<<<<<<<<
- *                     x_p+=0.06
- *                     y_p +=0.03
+ *                 y = <int>((<float>dimensions.first.start)+y_c)
+ *                 h = <int>((<float>dimensions.first.end)+y_c)
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     x_c = 0.0
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
  */
-        goto __pyx_L9;
       }
 
-      /* "GlimpseVisualizer.pyx":162
- *                     x_p+=0.06
- *                     y_p +=0.03
- *                 elif(i==3):             # <<<<<<<<<<<<<<
- *                     x_p +=0.08
- *                     y_p +=0.03
+      /* "GlimpseVisualizer.pyx":161
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     y_c= 0.0
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
  */
-      __pyx_t_7 = ((__pyx_v_i == 3) != 0);
-      if (__pyx_t_7) {
-
-        /* "GlimpseVisualizer.pyx":163
- *                     y_p +=0.03
- *                 elif(i==3):
- *                     x_p +=0.08             # <<<<<<<<<<<<<<
- *                     y_p +=0.03
- *                 elif(i==4):
- */
-        __pyx_v_x_p = (__pyx_v_x_p + 0.08);
-
-        /* "GlimpseVisualizer.pyx":164
- *                 elif(i==3):
- *                     x_p +=0.08
- *                     y_p +=0.03             # <<<<<<<<<<<<<<
- *                 elif(i==4):
- *                     x_p +=0.09
- */
-        __pyx_v_y_p = (__pyx_v_y_p + 0.03);
+      __pyx_t_5 = ((__pyx_v_y > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L26_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_y > (__pyx_v_self->dim4 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L26_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_h > (__pyx_v_self->dim3 - 1)) != 0);
+      if (!__pyx_t_5) {
+      } else {
+        __pyx_t_4 = __pyx_t_5;
+        goto __pyx_L26_bool_binop_done;
+      }
+      __pyx_t_5 = ((__pyx_v_h > (__pyx_v_self->dim4 - 1)) != 0);
+      __pyx_t_4 = __pyx_t_5;
+      __pyx_L26_bool_binop_done:;
+      if (__pyx_t_4) {
 
         /* "GlimpseVisualizer.pyx":162
- *                     x_p+=0.06
- *                     y_p +=0.03
- *                 elif(i==3):             # <<<<<<<<<<<<<<
- *                     x_p +=0.08
- *                     y_p +=0.03
+ *                     x_c = 0.0
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+ *                     y_c= 0.0             # <<<<<<<<<<<<<<
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+ *                 for k in range(self.dim1):
  */
-        goto __pyx_L9;
+        __pyx_v_y_c = 0.0;
+
+        /* "GlimpseVisualizer.pyx":161
+ *                 if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+ *                     x_c = 0.0
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):             # <<<<<<<<<<<<<<
+ *                     y_c= 0.0
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+ */
       }
 
-      /* "GlimpseVisualizer.pyx":165
- *                     x_p +=0.08
- *                     y_p +=0.03
- *                 elif(i==4):             # <<<<<<<<<<<<<<
- *                     x_p +=0.09
- *                     y_p +=0.03
+      /* "GlimpseVisualizer.pyx":163
+ *                 if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+ *                     y_c= 0.0
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)             # <<<<<<<<<<<<<<
+ *                 for k in range(self.dim1):
+ *                     if(k>0 and i>0):
  */
-      __pyx_t_7 = ((__pyx_v_i == 4) != 0);
-      if (__pyx_t_7) {
+      __pyx_t_11 = __Pyx_PyInt_From_int(__pyx_v_lab_t); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_11);
+      __Pyx_GetModuleGlobalName(__pyx_t_13, __pyx_n_s_asarray); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __pyx_t_9.data = __pyx_v_labels.data;
+      __pyx_t_9.memview = __pyx_v_labels.memview;
+      __PYX_INC_MEMVIEW(&__pyx_t_9, 0);
+      {
+    Py_ssize_t __pyx_tmp_idx = __pyx_v_j;
+    Py_ssize_t __pyx_tmp_stride = __pyx_v_labels.strides[0];
+        __pyx_t_9.data += __pyx_tmp_idx * __pyx_tmp_stride;
+}
 
-        /* "GlimpseVisualizer.pyx":166
- *                     y_p +=0.03
- *                 elif(i==4):
- *                     x_p +=0.09             # <<<<<<<<<<<<<<
- *                     y_p +=0.03
- *                 else:
- */
-        __pyx_v_x_p = (__pyx_v_x_p + 0.09);
+{
+    Py_ssize_t __pyx_tmp_idx = __pyx_v_i;
+    Py_ssize_t __pyx_tmp_stride = __pyx_v_labels.strides[1];
+        __pyx_t_9.data += __pyx_tmp_idx * __pyx_tmp_stride;
+}
 
-        /* "GlimpseVisualizer.pyx":167
- *                 elif(i==4):
- *                     x_p +=0.09
- *                     y_p +=0.03             # <<<<<<<<<<<<<<
- *                 else:
- *                     x_p+=0.05
+__pyx_t_9.shape[0] = __pyx_v_labels.shape[2];
+__pyx_t_9.strides[0] = __pyx_v_labels.strides[2];
+    __pyx_t_9.suboffsets[0] = -1;
+
+__pyx_t_14 = __pyx_memoryview_fromslice(__pyx_t_9, 1, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_10visualizer_uchar, (int (*)(char *, PyObject *)) __pyx_memview_set_nn___pyx_t_10visualizer_uchar, 0);; if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_14);
+      __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
+      __pyx_t_9.memview = NULL;
+      __pyx_t_9.data = NULL;
+      __pyx_t_15 = NULL;
+      if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_13))) {
+        __pyx_t_15 = PyMethod_GET_SELF(__pyx_t_13);
+        if (likely(__pyx_t_15)) {
+          PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_13);
+          __Pyx_INCREF(__pyx_t_15);
+          __Pyx_INCREF(function);
+          __Pyx_DECREF_SET(__pyx_t_13, function);
+        }
+      }
+      __pyx_t_10 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_13, __pyx_t_15, __pyx_t_14) : __Pyx_PyObject_CallOneArg(__pyx_t_13, __pyx_t_14);
+      __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
+      __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
+      if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_10);
+      __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
+      __pyx_t_13 = __Pyx_PyInt_From_int(__pyx_v_x); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_13);
+      __pyx_t_14 = __Pyx_PyInt_From_int(__pyx_v_w); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_14);
+      __pyx_t_15 = __Pyx_PyInt_From_int(__pyx_v_y); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_15);
+      __pyx_t_16 = __Pyx_PyInt_From_int(__pyx_v_h); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_16);
+      __pyx_t_17 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim1); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_17);
+      __pyx_t_18 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim2); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_18);
+      __pyx_t_19 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim3); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_19);
+      __pyx_t_20 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim4); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_20);
+      __pyx_t_21 = __Pyx_PyInt_FromSize_t(__pyx_v_self->images); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_21);
+      __pyx_t_22 = PyTuple_New(12); if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_GOTREF(__pyx_t_22);
+      __Pyx_INCREF(__pyx_kp_s_dimensions);
+      __Pyx_GIVEREF(__pyx_kp_s_dimensions);
+      PyTuple_SET_ITEM(__pyx_t_22, 0, __pyx_kp_s_dimensions);
+      __Pyx_GIVEREF(__pyx_t_11);
+      PyTuple_SET_ITEM(__pyx_t_22, 1, __pyx_t_11);
+      __Pyx_GIVEREF(__pyx_t_10);
+      PyTuple_SET_ITEM(__pyx_t_22, 2, __pyx_t_10);
+      __Pyx_GIVEREF(__pyx_t_13);
+      PyTuple_SET_ITEM(__pyx_t_22, 3, __pyx_t_13);
+      __Pyx_GIVEREF(__pyx_t_14);
+      PyTuple_SET_ITEM(__pyx_t_22, 4, __pyx_t_14);
+      __Pyx_GIVEREF(__pyx_t_15);
+      PyTuple_SET_ITEM(__pyx_t_22, 5, __pyx_t_15);
+      __Pyx_GIVEREF(__pyx_t_16);
+      PyTuple_SET_ITEM(__pyx_t_22, 6, __pyx_t_16);
+      __Pyx_GIVEREF(__pyx_t_17);
+      PyTuple_SET_ITEM(__pyx_t_22, 7, __pyx_t_17);
+      __Pyx_GIVEREF(__pyx_t_18);
+      PyTuple_SET_ITEM(__pyx_t_22, 8, __pyx_t_18);
+      __Pyx_GIVEREF(__pyx_t_19);
+      PyTuple_SET_ITEM(__pyx_t_22, 9, __pyx_t_19);
+      __Pyx_GIVEREF(__pyx_t_20);
+      PyTuple_SET_ITEM(__pyx_t_22, 10, __pyx_t_20);
+      __Pyx_GIVEREF(__pyx_t_21);
+      PyTuple_SET_ITEM(__pyx_t_22, 11, __pyx_t_21);
+      __pyx_t_11 = 0;
+      __pyx_t_10 = 0;
+      __pyx_t_13 = 0;
+      __pyx_t_14 = 0;
+      __pyx_t_15 = 0;
+      __pyx_t_16 = 0;
+      __pyx_t_17 = 0;
+      __pyx_t_18 = 0;
+      __pyx_t_19 = 0;
+      __pyx_t_20 = 0;
+      __pyx_t_21 = 0;
+      if (__Pyx_PrintOne(0, __pyx_t_22) < 0) __PYX_ERR(0, 163, __pyx_L1_error)
+      __Pyx_DECREF(__pyx_t_22); __pyx_t_22 = 0;
+
+      /* "GlimpseVisualizer.pyx":164
+ *                     y_c= 0.0
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+ *                 for k in range(self.dim1):             # <<<<<<<<<<<<<<
+ *                     if(k>0 and i>0):
+ *                         if(k==1 or k==3):
  */
-        __pyx_v_y_p = (__pyx_v_y_p + 0.03);
+      __pyx_t_23 = __pyx_v_self->dim1;
+      __pyx_t_24 = __pyx_t_23;
+      for (__pyx_t_25 = 0; __pyx_t_25 < __pyx_t_24; __pyx_t_25+=1) {
+        __pyx_v_k = __pyx_t_25;
 
         /* "GlimpseVisualizer.pyx":165
- *                     x_p +=0.08
- *                     y_p +=0.03
- *                 elif(i==4):             # <<<<<<<<<<<<<<
- *                     x_p +=0.09
- *                     y_p +=0.03
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+ *                 for k in range(self.dim1):
+ *                     if(k>0 and i>0):             # <<<<<<<<<<<<<<
+ *                         if(k==1 or k==3):
+ *                             x +=15
  */
-        goto __pyx_L9;
-      }
-
-      /* "GlimpseVisualizer.pyx":169
- *                     y_p +=0.03
- *                 else:
- *                     x_p+=0.05             # <<<<<<<<<<<<<<
- *                     y_p+=0.001
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
- */
-      /*else*/ {
-        __pyx_v_x_p = (__pyx_v_x_p + 0.05);
-
-        /* "GlimpseVisualizer.pyx":170
- *                 else:
- *                     x_p+=0.05
- *                     y_p+=0.001             # <<<<<<<<<<<<<<
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
- *             for k in range(self.dim1):
- */
-        __pyx_v_y_p = (__pyx_v_y_p + 0.001);
-      }
-      __pyx_L9:;
-    }
-
-    /* "GlimpseVisualizer.pyx":171
- *                     x_p+=0.05
- *                     y_p+=0.001
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)             # <<<<<<<<<<<<<<
- *             for k in range(self.dim1):
- *                 if (k == lab_t):
- */
-    if (unlikely(__pyx_v_self->images == 0)) {
-      PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 171, __pyx_L1_error)
-    }
-    __pyx_t_10 = PyFloat_FromDouble(floor(__pyx_v_x_f / __pyx_v_self->images)); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_10);
-    if (unlikely(__pyx_v_self->images == 0)) {
-      PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 171, __pyx_L1_error)
-    }
-    __pyx_t_9 = PyFloat_FromDouble(floor(__pyx_v_w_f / __pyx_v_self->images)); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_9);
-    if (unlikely(__pyx_v_self->images == 0)) {
-      PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 171, __pyx_L1_error)
-    }
-    __pyx_t_12 = PyFloat_FromDouble(floor(__pyx_v_y_f / __pyx_v_self->images)); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_12);
-    if (unlikely(__pyx_v_self->images == 0)) {
-      PyErr_SetString(PyExc_ZeroDivisionError, "float division");
-      __PYX_ERR(0, 171, __pyx_L1_error)
-    }
-    __pyx_t_13 = PyFloat_FromDouble(floor(__pyx_v_h_f / __pyx_v_self->images)); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_13);
-    __pyx_t_14 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim1); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_14);
-    __pyx_t_15 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim2); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_15);
-    __pyx_t_16 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim3); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_16);
-    __pyx_t_17 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim4); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_17);
-    __pyx_t_18 = __Pyx_PyInt_FromSize_t(__pyx_v_self->images); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_18);
-    __pyx_t_19 = PyTuple_New(10); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_19);
-    __Pyx_INCREF(__pyx_kp_s_dimensions);
-    __Pyx_GIVEREF(__pyx_kp_s_dimensions);
-    PyTuple_SET_ITEM(__pyx_t_19, 0, __pyx_kp_s_dimensions);
-    __Pyx_GIVEREF(__pyx_t_10);
-    PyTuple_SET_ITEM(__pyx_t_19, 1, __pyx_t_10);
-    __Pyx_GIVEREF(__pyx_t_9);
-    PyTuple_SET_ITEM(__pyx_t_19, 2, __pyx_t_9);
-    __Pyx_GIVEREF(__pyx_t_12);
-    PyTuple_SET_ITEM(__pyx_t_19, 3, __pyx_t_12);
-    __Pyx_GIVEREF(__pyx_t_13);
-    PyTuple_SET_ITEM(__pyx_t_19, 4, __pyx_t_13);
-    __Pyx_GIVEREF(__pyx_t_14);
-    PyTuple_SET_ITEM(__pyx_t_19, 5, __pyx_t_14);
-    __Pyx_GIVEREF(__pyx_t_15);
-    PyTuple_SET_ITEM(__pyx_t_19, 6, __pyx_t_15);
-    __Pyx_GIVEREF(__pyx_t_16);
-    PyTuple_SET_ITEM(__pyx_t_19, 7, __pyx_t_16);
-    __Pyx_GIVEREF(__pyx_t_17);
-    PyTuple_SET_ITEM(__pyx_t_19, 8, __pyx_t_17);
-    __Pyx_GIVEREF(__pyx_t_18);
-    PyTuple_SET_ITEM(__pyx_t_19, 9, __pyx_t_18);
-    __pyx_t_10 = 0;
-    __pyx_t_9 = 0;
-    __pyx_t_12 = 0;
-    __pyx_t_13 = 0;
-    __pyx_t_14 = 0;
-    __pyx_t_15 = 0;
-    __pyx_t_16 = 0;
-    __pyx_t_17 = 0;
-    __pyx_t_18 = 0;
-    if (__Pyx_PrintOne(0, __pyx_t_19) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
-
-    /* "GlimpseVisualizer.pyx":172
- *                     y_p+=0.001
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
- *             for k in range(self.dim1):             # <<<<<<<<<<<<<<
- *                 if (k == lab_t):
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)
- */
-    __pyx_t_4 = __pyx_v_self->dim1;
-    __pyx_t_5 = __pyx_t_4;
-    for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
-      __pyx_v_k = __pyx_t_6;
-
-      /* "GlimpseVisualizer.pyx":173
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
- *             for k in range(self.dim1):
- *                 if (k == lab_t):             # <<<<<<<<<<<<<<
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)
- *                 else:
- */
-      __pyx_t_7 = ((__pyx_v_k == __pyx_v_lab_t) != 0);
-      if (__pyx_t_7) {
-
-        /* "GlimpseVisualizer.pyx":174
- *             for k in range(self.dim1):
- *                 if (k == lab_t):
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)             # <<<<<<<<<<<<<<
- *                 else:
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images, <int>h_f//self.images)
- */
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 174, __pyx_L1_error)
+        __pyx_t_5 = ((__pyx_v_k > 0) != 0);
+        if (__pyx_t_5) {
+        } else {
+          __pyx_t_4 = __pyx_t_5;
+          goto __pyx_L33_bool_binop_done;
         }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 174, __pyx_L1_error)
-        }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 174, __pyx_L1_error)
-        }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 174, __pyx_L1_error)
-        }
-        __pyx_f_10visualizer_11GVisualizer_set_ones(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_k, __pyx_v_i, (((int)__pyx_v_x_f) / __pyx_v_self->images), (((int)__pyx_v_w_f) / __pyx_v_self->images), (((int)__pyx_v_y_f) / __pyx_v_self->images), (((int)__pyx_v_h_f) / __pyx_v_self->images));
+        __pyx_t_5 = ((__pyx_v_i > 0) != 0);
+        __pyx_t_4 = __pyx_t_5;
+        __pyx_L33_bool_binop_done:;
+        if (__pyx_t_4) {
 
-        /* "GlimpseVisualizer.pyx":173
- *             print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
- *             for k in range(self.dim1):
- *                 if (k == lab_t):             # <<<<<<<<<<<<<<
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)
- *                 else:
+          /* "GlimpseVisualizer.pyx":166
+ *                 for k in range(self.dim1):
+ *                     if(k>0 and i>0):
+ *                         if(k==1 or k==3):             # <<<<<<<<<<<<<<
+ *                             x +=15
+ *                             w +=15
  */
-        goto __pyx_L12;
-      }
+          switch (__pyx_v_k) {
+            case 1:
+            case 3:
 
-      /* "GlimpseVisualizer.pyx":176
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)
- *                 else:
- *                     self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images, <int>h_f//self.images)             # <<<<<<<<<<<<<<
+            /* "GlimpseVisualizer.pyx":167
+ *                     if(k>0 and i>0):
+ *                         if(k==1 or k==3):
+ *                             x +=15             # <<<<<<<<<<<<<<
+ *                             w +=15
+ *                             y +=16
+ */
+            __pyx_v_x = (__pyx_v_x + 15);
+
+            /* "GlimpseVisualizer.pyx":168
+ *                         if(k==1 or k==3):
+ *                             x +=15
+ *                             w +=15             # <<<<<<<<<<<<<<
+ *                             y +=16
+ *                             h +=16
+ */
+            __pyx_v_w = (__pyx_v_w + 15);
+
+            /* "GlimpseVisualizer.pyx":169
+ *                             x +=15
+ *                             w +=15
+ *                             y +=16             # <<<<<<<<<<<<<<
+ *                             h +=16
+ *                             if (k == lab_t):
+ */
+            __pyx_v_y = (__pyx_v_y + 16);
+
+            /* "GlimpseVisualizer.pyx":170
+ *                             w +=15
+ *                             y +=16
+ *                             h +=16             # <<<<<<<<<<<<<<
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ */
+            __pyx_v_h = (__pyx_v_h + 16);
+
+            /* "GlimpseVisualizer.pyx":171
+ *                             y +=16
+ *                             h +=16
+ *                             if (k == lab_t):             # <<<<<<<<<<<<<<
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                             x -=15
+ */
+            __pyx_t_4 = ((__pyx_v_k == __pyx_v_lab_t) != 0);
+            if (__pyx_t_4) {
+
+              /* "GlimpseVisualizer.pyx":172
+ *                             h +=16
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)             # <<<<<<<<<<<<<<
+ *                             x -=15
+ *                             w -=15
+ */
+              __pyx_f_10visualizer_18GlimpseConstructor_set_ones(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_k, __pyx_v_i, ((int)__pyx_v_x), ((int)__pyx_v_w), ((int)__pyx_v_y), ((int)__pyx_v_h));
+
+              /* "GlimpseVisualizer.pyx":171
+ *                             y +=16
+ *                             h +=16
+ *                             if (k == lab_t):             # <<<<<<<<<<<<<<
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                             x -=15
+ */
+            }
+
+            /* "GlimpseVisualizer.pyx":173
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                             x -=15             # <<<<<<<<<<<<<<
+ *                             w -=15
+ *                             y -=16
+ */
+            __pyx_v_x = (__pyx_v_x - 15);
+
+            /* "GlimpseVisualizer.pyx":174
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                             x -=15
+ *                             w -=15             # <<<<<<<<<<<<<<
+ *                             y -=16
+ *                             h -=16
+ */
+            __pyx_v_w = (__pyx_v_w - 15);
+
+            /* "GlimpseVisualizer.pyx":175
+ *                             x -=15
+ *                             w -=15
+ *                             y -=16             # <<<<<<<<<<<<<<
+ *                             h -=16
+ *                         else:
+ */
+            __pyx_v_y = (__pyx_v_y - 16);
+
+            /* "GlimpseVisualizer.pyx":176
+ *                             w -=15
+ *                             y -=16
+ *                             h -=16             # <<<<<<<<<<<<<<
+ *                         else:
+ *                             y+=2
+ */
+            __pyx_v_h = (__pyx_v_h - 16);
+
+            /* "GlimpseVisualizer.pyx":166
+ *                 for k in range(self.dim1):
+ *                     if(k>0 and i>0):
+ *                         if(k==1 or k==3):             # <<<<<<<<<<<<<<
+ *                             x +=15
+ *                             w +=15
+ */
+            break;
+            default:
+
+            /* "GlimpseVisualizer.pyx":178
+ *                             h -=16
+ *                         else:
+ *                             y+=2             # <<<<<<<<<<<<<<
+ *                             h+=2
+ *                             if (k == lab_t):
+ */
+            __pyx_v_y = (__pyx_v_y + 2);
+
+            /* "GlimpseVisualizer.pyx":179
+ *                         else:
+ *                             y+=2
+ *                             h+=2             # <<<<<<<<<<<<<<
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ */
+            __pyx_v_h = (__pyx_v_h + 2);
+
+            /* "GlimpseVisualizer.pyx":180
+ *                             y+=2
+ *                             h+=2
+ *                             if (k == lab_t):             # <<<<<<<<<<<<<<
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                     elif (k == lab_t):
+ */
+            __pyx_t_4 = ((__pyx_v_k == __pyx_v_lab_t) != 0);
+            if (__pyx_t_4) {
+
+              /* "GlimpseVisualizer.pyx":181
+ *                             h+=2
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)             # <<<<<<<<<<<<<<
+ *                     elif (k == lab_t):
+ *                         self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ */
+              __pyx_f_10visualizer_18GlimpseConstructor_set_ones(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_k, __pyx_v_i, ((int)__pyx_v_x), ((int)__pyx_v_w), ((int)__pyx_v_y), ((int)__pyx_v_h));
+
+              /* "GlimpseVisualizer.pyx":180
+ *                             y+=2
+ *                             h+=2
+ *                             if (k == lab_t):             # <<<<<<<<<<<<<<
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                     elif (k == lab_t):
+ */
+            }
+            break;
+          }
+
+          /* "GlimpseVisualizer.pyx":165
+ *                 print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+ *                 for k in range(self.dim1):
+ *                     if(k>0 and i>0):             # <<<<<<<<<<<<<<
+ *                         if(k==1 or k==3):
+ *                             x +=15
+ */
+          goto __pyx_L32;
+        }
+
+        /* "GlimpseVisualizer.pyx":182
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                     elif (k == lab_t):             # <<<<<<<<<<<<<<
+ *                         self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ * 
+ */
+        __pyx_t_4 = ((__pyx_v_k == __pyx_v_lab_t) != 0);
+        if (__pyx_t_4) {
+
+          /* "GlimpseVisualizer.pyx":183
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                     elif (k == lab_t):
+ *                         self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)             # <<<<<<<<<<<<<<
  * 
  *     @boundscheck(False)
  */
-      /*else*/ {
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 176, __pyx_L1_error)
+          __pyx_f_10visualizer_18GlimpseConstructor_set_ones(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_k, __pyx_v_i, ((int)__pyx_v_x), ((int)__pyx_v_w), ((int)__pyx_v_y), ((int)__pyx_v_h));
+
+          /* "GlimpseVisualizer.pyx":182
+ *                             if (k == lab_t):
+ *                                 self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ *                     elif (k == lab_t):             # <<<<<<<<<<<<<<
+ *                         self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+ * 
+ */
         }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 176, __pyx_L1_error)
-        }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 176, __pyx_L1_error)
-        }
-        if (unlikely(__pyx_v_self->images == 0)) {
-          PyErr_SetString(PyExc_ZeroDivisionError, "integer division or modulo by zero");
-          __PYX_ERR(0, 176, __pyx_L1_error)
-        }
-        __pyx_f_10visualizer_11GVisualizer_set_ones(__pyx_v_self, __pyx_v_self->heat_maps, __pyx_v_k, __pyx_v_i, (((int)__pyx_v_x_f) / __pyx_v_self->images), (((int)__pyx_v_w_f) / __pyx_v_self->images), (((int)__pyx_v_y_f) / __pyx_v_self->images), (((int)__pyx_v_h_f) / __pyx_v_self->images));
+        __pyx_L32:;
       }
-      __pyx_L12:;
     }
   }
 
@@ -3972,11 +4171,10 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_bb_o, 1);
   /* function exit code */
   goto __pyx_L0;
   __pyx_L1_error:;
-  __PYX_XDEC_MEMVIEW(&__pyx_t_8, 1);
-  __Pyx_XDECREF(__pyx_t_9);
+  __PYX_XDEC_MEMVIEW(&__pyx_t_9, 1);
   __Pyx_XDECREF(__pyx_t_10);
-  __PYX_XDEC_MEMVIEW(&__pyx_t_11, 1);
-  __Pyx_XDECREF(__pyx_t_12);
+  __Pyx_XDECREF(__pyx_t_11);
+  __PYX_XDEC_MEMVIEW(&__pyx_t_12, 1);
   __Pyx_XDECREF(__pyx_t_13);
   __Pyx_XDECREF(__pyx_t_14);
   __Pyx_XDECREF(__pyx_t_15);
@@ -3984,13 +4182,16 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_bb_o, 1);
   __Pyx_XDECREF(__pyx_t_17);
   __Pyx_XDECREF(__pyx_t_18);
   __Pyx_XDECREF(__pyx_t_19);
-  __Pyx_WriteUnraisable("visualizer.GVisualizer.create_heatmaps", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
+  __Pyx_XDECREF(__pyx_t_20);
+  __Pyx_XDECREF(__pyx_t_21);
+  __Pyx_XDECREF(__pyx_t_22);
+  __Pyx_WriteUnraisable("visualizer.GlimpseConstructor.create_heatmaps", __pyx_clineno, __pyx_lineno, __pyx_filename, 1, 0);
   __pyx_L0:;
   __PYX_XDEC_MEMVIEW(&__pyx_v_bb_o, 1);
   __Pyx_RefNannyFinishContext();
 }
 
-/* "GlimpseVisualizer.pyx":181
+/* "GlimpseVisualizer.pyx":188
  *     @wraparound(False)
  *     @cdivision(False)
  *     cdef uchar[:,:,:,:] convert_heatmap(self):             # <<<<<<<<<<<<<<
@@ -3998,7 +4199,7 @@ __PYX_XDEC_MEMVIEW(&__pyx_v_bb_o, 1);
  *         cdef int i, j, k, n
  */
 
-static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self) {
+static __Pyx_memviewslice __pyx_f_10visualizer_18GlimpseConstructor_convert_heatmap(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self) {
   __Pyx_memviewslice __pyx_v_output = { 0, 0, { 0 }, { 0 }, { 0 } };
   int __pyx_v_i;
   int __pyx_v_j;
@@ -4034,24 +4235,24 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("convert_heatmap", 0);
 
-  /* "GlimpseVisualizer.pyx":182
+  /* "GlimpseVisualizer.pyx":189
  *     @cdivision(False)
  *     cdef uchar[:,:,:,:] convert_heatmap(self):
  *         cdef uchar [:,:,:,:] output = zeros((self.dim1, self.dim2, self.dim3, self.dim4),dtype=uint8)             # <<<<<<<<<<<<<<
  *         cdef int i, j, k, n
  *         for i in range(self.dim1):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyInt_FromSize_t(__pyx_v_self->dim4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyTuple_New(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_6 = PyTuple_New(4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_GIVEREF(__pyx_t_2);
   PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
@@ -4065,29 +4266,29 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
   __pyx_t_5 = 0;
-  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6);
   __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_uint8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_uint8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 182, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_dtype, __pyx_t_4) < 0) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dsdsdsds_nn___pyx_t_10visualizer_uchar(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_PyObject_to_MemoryviewSlice_dsdsdsds_nn___pyx_t_10visualizer_uchar(__pyx_t_4, PyBUF_WRITABLE); if (unlikely(!__pyx_t_7.memview)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_output = __pyx_t_7;
   __pyx_t_7.memview = NULL;
   __pyx_t_7.data = NULL;
 
-  /* "GlimpseVisualizer.pyx":184
+  /* "GlimpseVisualizer.pyx":191
  *         cdef uchar [:,:,:,:] output = zeros((self.dim1, self.dim2, self.dim3, self.dim4),dtype=uint8)
  *         cdef int i, j, k, n
  *         for i in range(self.dim1):             # <<<<<<<<<<<<<<
@@ -4099,7 +4300,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   for (__pyx_t_10 = 0; __pyx_t_10 < __pyx_t_9; __pyx_t_10+=1) {
     __pyx_v_i = __pyx_t_10;
 
-    /* "GlimpseVisualizer.pyx":185
+    /* "GlimpseVisualizer.pyx":192
  *         cdef int i, j, k, n
  *         for i in range(self.dim1):
  *             for j in range(self.dim2):             # <<<<<<<<<<<<<<
@@ -4111,7 +4312,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
     for (__pyx_t_13 = 0; __pyx_t_13 < __pyx_t_12; __pyx_t_13+=1) {
       __pyx_v_j = __pyx_t_13;
 
-      /* "GlimpseVisualizer.pyx":186
+      /* "GlimpseVisualizer.pyx":193
  *         for i in range(self.dim1):
  *             for j in range(self.dim2):
  *                 for k in range( self.dim3):             # <<<<<<<<<<<<<<
@@ -4123,7 +4324,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
       for (__pyx_t_16 = 0; __pyx_t_16 < __pyx_t_15; __pyx_t_16+=1) {
         __pyx_v_k = __pyx_t_16;
 
-        /* "GlimpseVisualizer.pyx":187
+        /* "GlimpseVisualizer.pyx":194
  *             for j in range(self.dim2):
  *                 for k in range( self.dim3):
  *                     for n in range(self.dim4):             # <<<<<<<<<<<<<<
@@ -4135,7 +4336,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
         for (__pyx_t_19 = 0; __pyx_t_19 < __pyx_t_18; __pyx_t_19+=1) {
           __pyx_v_n = __pyx_t_19;
 
-          /* "GlimpseVisualizer.pyx":188
+          /* "GlimpseVisualizer.pyx":195
  *                 for k in range( self.dim3):
  *                     for n in range(self.dim4):
  *                         output[i,j,k,n] = self.heat_maps[i][j][k][n]             # <<<<<<<<<<<<<<
@@ -4152,7 +4353,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
     }
   }
 
-  /* "GlimpseVisualizer.pyx":189
+  /* "GlimpseVisualizer.pyx":196
  *                     for n in range(self.dim4):
  *                         output[i,j,k,n] = self.heat_maps[i][j][k][n]
  *         return output             # <<<<<<<<<<<<<<
@@ -4163,7 +4364,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   __pyx_r = __pyx_v_output;
   goto __pyx_L0;
 
-  /* "GlimpseVisualizer.pyx":181
+  /* "GlimpseVisualizer.pyx":188
  *     @wraparound(False)
  *     @cdivision(False)
  *     cdef uchar[:,:,:,:] convert_heatmap(self):             # <<<<<<<<<<<<<<
@@ -4182,7 +4383,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   __PYX_XDEC_MEMVIEW(&__pyx_t_7, 1);
   __pyx_r.data = NULL;
   __pyx_r.memview = NULL;
-  __Pyx_AddTraceback("visualizer.GVisualizer.convert_heatmap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.convert_heatmap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   goto __pyx_L2;
   __pyx_L0:;
   if (unlikely(!__pyx_r.memview)) {
@@ -4194,7 +4395,7 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
   return __pyx_r;
 }
 
-/* "GlimpseVisualizer.pyx":191
+/* "GlimpseVisualizer.pyx":198
  *         return output
  * 
  *     def get_heatmap(self):             # <<<<<<<<<<<<<<
@@ -4202,19 +4403,19 @@ static __Pyx_memviewslice __pyx_f_10visualizer_11GVisualizer_convert_heatmap(str
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_5get_heatmap(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_5get_heatmap(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_5get_heatmap(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_5get_heatmap(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("get_heatmap (wrapper)", 0);
-  __pyx_r = __pyx_pf_10visualizer_11GVisualizer_4get_heatmap(((struct __pyx_obj_10visualizer_GVisualizer *)__pyx_v_self));
+  __pyx_r = __pyx_pf_10visualizer_18GlimpseConstructor_4get_heatmap(((struct __pyx_obj_10visualizer_GlimpseConstructor *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self) {
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_4get_heatmap(struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4227,32 +4428,32 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_o
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_heatmap", 0);
 
-  /* "GlimpseVisualizer.pyx":192
+  /* "GlimpseVisualizer.pyx":199
  * 
  *     def get_heatmap(self):
  *         return asarray(self.convert_heatmap(),dtype=uint8)             # <<<<<<<<<<<<<<
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_asarray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = ((struct __pyx_vtabstruct_10visualizer_GVisualizer *)__pyx_v_self->__pyx_vtab)->convert_heatmap(__pyx_v_self); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 192, __pyx_L1_error)
-  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_2, 4, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_10visualizer_uchar, (int (*)(char *, PyObject *)) __pyx_memview_set_nn___pyx_t_10visualizer_uchar, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __pyx_t_2 = ((struct __pyx_vtabstruct_10visualizer_GlimpseConstructor *)__pyx_v_self->__pyx_vtab)->convert_heatmap(__pyx_v_self); if (unlikely(!__pyx_t_2.memview)) __PYX_ERR(0, 199, __pyx_L1_error)
+  __pyx_t_3 = __pyx_memoryview_fromslice(__pyx_t_2, 4, (PyObject *(*)(char *)) __pyx_memview_get_nn___pyx_t_10visualizer_uchar, (int (*)(char *, PyObject *)) __pyx_memview_set_nn___pyx_t_10visualizer_uchar, 0);; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __PYX_XDEC_MEMVIEW(&__pyx_t_2, 1);
   __pyx_t_2.memview = NULL;
   __pyx_t_2.data = NULL;
-  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_GIVEREF(__pyx_t_3);
   PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_uint8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_uint8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_dtype, __pyx_t_5) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 192, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4261,7 +4462,7 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_o
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "GlimpseVisualizer.pyx":191
+  /* "GlimpseVisualizer.pyx":198
  *         return output
  * 
  *     def get_heatmap(self):             # <<<<<<<<<<<<<<
@@ -4275,7 +4476,7 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_o
   __Pyx_XDECREF(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
-  __Pyx_AddTraceback("visualizer.GVisualizer.get_heatmap", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.get_heatmap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -4290,19 +4491,19 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_4get_heatmap(struct __pyx_o
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused); /*proto*/
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_7__reduce_cython__(PyObject *__pyx_v_self, CYTHON_UNUSED PyObject *unused) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__reduce_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10visualizer_11GVisualizer_6__reduce_cython__(((struct __pyx_obj_10visualizer_GVisualizer *)__pyx_v_self));
+  __pyx_r = __pyx_pf_10visualizer_18GlimpseConstructor_6__reduce_cython__(((struct __pyx_obj_10visualizer_GlimpseConstructor *)__pyx_v_self));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self) {
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_6__reduce_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4332,7 +4533,7 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_6__reduce_cython__(CYTHON_U
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("visualizer.GVisualizer.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.__reduce_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -4347,19 +4548,19 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_6__reduce_cython__(CYTHON_U
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
-static PyObject *__pyx_pw_10visualizer_11GVisualizer_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state); /*proto*/
+static PyObject *__pyx_pw_10visualizer_18GlimpseConstructor_9__setstate_cython__(PyObject *__pyx_v_self, PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = 0;
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__setstate_cython__ (wrapper)", 0);
-  __pyx_r = __pyx_pf_10visualizer_11GVisualizer_8__setstate_cython__(((struct __pyx_obj_10visualizer_GVisualizer *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
+  __pyx_r = __pyx_pf_10visualizer_18GlimpseConstructor_8__setstate_cython__(((struct __pyx_obj_10visualizer_GlimpseConstructor *)__pyx_v_self), ((PyObject *)__pyx_v___pyx_state));
 
   /* function exit code */
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_10visualizer_11GVisualizer_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GVisualizer *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
+static PyObject *__pyx_pf_10visualizer_18GlimpseConstructor_8__setstate_cython__(CYTHON_UNUSED struct __pyx_obj_10visualizer_GlimpseConstructor *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state) {
   PyObject *__pyx_r = NULL;
   __Pyx_RefNannyDeclarations
   PyObject *__pyx_t_1 = NULL;
@@ -4389,7 +4590,7 @@ static PyObject *__pyx_pf_10visualizer_11GVisualizer_8__setstate_cython__(CYTHON
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_1);
-  __Pyx_AddTraceback("visualizer.GVisualizer.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("visualizer.GlimpseConstructor.__setstate_cython__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __Pyx_XGIVEREF(__pyx_r);
   __Pyx_RefNannyFinishContext();
@@ -17413,10 +17614,10 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *__
   __Pyx_RefNannyFinishContext();
   return __pyx_r;
 }
-static struct __pyx_vtabstruct_10visualizer_GVisualizer __pyx_vtable_10visualizer_GVisualizer;
+static struct __pyx_vtabstruct_10visualizer_GlimpseConstructor __pyx_vtable_10visualizer_GlimpseConstructor;
 
-static PyObject *__pyx_tp_new_10visualizer_GVisualizer(PyTypeObject *t, PyObject *a, PyObject *k) {
-  struct __pyx_obj_10visualizer_GVisualizer *p;
+static PyObject *__pyx_tp_new_10visualizer_GlimpseConstructor(PyTypeObject *t, PyObject *a, PyObject *k) {
+  struct __pyx_obj_10visualizer_GlimpseConstructor *p;
   PyObject *o;
   if (likely((t->tp_flags & Py_TPFLAGS_IS_ABSTRACT) == 0)) {
     o = (*t->tp_alloc)(t, 0);
@@ -17424,16 +17625,16 @@ static PyObject *__pyx_tp_new_10visualizer_GVisualizer(PyTypeObject *t, PyObject
     o = (PyObject *) PyBaseObject_Type.tp_new(t, __pyx_empty_tuple, 0);
   }
   if (unlikely(!o)) return 0;
-  p = ((struct __pyx_obj_10visualizer_GVisualizer *)o);
-  p->__pyx_vtab = __pyx_vtabptr_10visualizer_GVisualizer;
-  if (unlikely(__pyx_pw_10visualizer_11GVisualizer_1__cinit__(o, a, k) < 0)) goto bad;
+  p = ((struct __pyx_obj_10visualizer_GlimpseConstructor *)o);
+  p->__pyx_vtab = __pyx_vtabptr_10visualizer_GlimpseConstructor;
+  if (unlikely(__pyx_pw_10visualizer_18GlimpseConstructor_1__cinit__(o, a, k) < 0)) goto bad;
   return o;
   bad:
   Py_DECREF(o); o = 0;
   return NULL;
 }
 
-static void __pyx_tp_dealloc_10visualizer_GVisualizer(PyObject *o) {
+static void __pyx_tp_dealloc_10visualizer_GlimpseConstructor(PyObject *o) {
   #if CYTHON_USE_TP_FINALIZE
   if (unlikely(PyType_HasFeature(Py_TYPE(o), Py_TPFLAGS_HAVE_FINALIZE) && Py_TYPE(o)->tp_finalize) && (!PyType_IS_GC(Py_TYPE(o)) || !_PyGC_FINALIZED(o))) {
     if (PyObject_CallFinalizerFromDealloc(o)) return;
@@ -17442,20 +17643,20 @@ static void __pyx_tp_dealloc_10visualizer_GVisualizer(PyObject *o) {
   (*Py_TYPE(o)->tp_free)(o);
 }
 
-static PyMethodDef __pyx_methods_10visualizer_GVisualizer[] = {
-  {"__deallocate__", (PyCFunction)__pyx_pw_10visualizer_11GVisualizer_3__deallocate__, METH_NOARGS, 0},
-  {"get_heatmap", (PyCFunction)__pyx_pw_10visualizer_11GVisualizer_5get_heatmap, METH_NOARGS, 0},
-  {"__reduce_cython__", (PyCFunction)__pyx_pw_10visualizer_11GVisualizer_7__reduce_cython__, METH_NOARGS, 0},
-  {"__setstate_cython__", (PyCFunction)__pyx_pw_10visualizer_11GVisualizer_9__setstate_cython__, METH_O, 0},
+static PyMethodDef __pyx_methods_10visualizer_GlimpseConstructor[] = {
+  {"__deallocate__", (PyCFunction)__pyx_pw_10visualizer_18GlimpseConstructor_3__deallocate__, METH_NOARGS, 0},
+  {"get_heatmap", (PyCFunction)__pyx_pw_10visualizer_18GlimpseConstructor_5get_heatmap, METH_NOARGS, 0},
+  {"__reduce_cython__", (PyCFunction)__pyx_pw_10visualizer_18GlimpseConstructor_7__reduce_cython__, METH_NOARGS, 0},
+  {"__setstate_cython__", (PyCFunction)__pyx_pw_10visualizer_18GlimpseConstructor_9__setstate_cython__, METH_O, 0},
   {0, 0, 0, 0}
 };
 
-static PyTypeObject __pyx_type_10visualizer_GVisualizer = {
+static PyTypeObject __pyx_type_10visualizer_GlimpseConstructor = {
   PyVarObject_HEAD_INIT(0, 0)
-  "visualizer.GVisualizer", /*tp_name*/
-  sizeof(struct __pyx_obj_10visualizer_GVisualizer), /*tp_basicsize*/
+  "visualizer.GlimpseConstructor", /*tp_name*/
+  sizeof(struct __pyx_obj_10visualizer_GlimpseConstructor), /*tp_basicsize*/
   0, /*tp_itemsize*/
-  __pyx_tp_dealloc_10visualizer_GVisualizer, /*tp_dealloc*/
+  __pyx_tp_dealloc_10visualizer_GlimpseConstructor, /*tp_dealloc*/
   #if PY_VERSION_HEX < 0x030800b4
   0, /*tp_print*/
   #endif
@@ -17488,7 +17689,7 @@ static PyTypeObject __pyx_type_10visualizer_GVisualizer = {
   0, /*tp_weaklistoffset*/
   0, /*tp_iter*/
   0, /*tp_iternext*/
-  __pyx_methods_10visualizer_GVisualizer, /*tp_methods*/
+  __pyx_methods_10visualizer_GlimpseConstructor, /*tp_methods*/
   0, /*tp_members*/
   0, /*tp_getset*/
   0, /*tp_base*/
@@ -17498,7 +17699,7 @@ static PyTypeObject __pyx_type_10visualizer_GVisualizer = {
   0, /*tp_dictoffset*/
   0, /*tp_init*/
   0, /*tp_alloc*/
-  __pyx_tp_new_10visualizer_GVisualizer, /*tp_new*/
+  __pyx_tp_new_10visualizer_GlimpseConstructor, /*tp_new*/
   0, /*tp_free*/
   0, /*tp_is_gc*/
   0, /*tp_bases*/
@@ -18303,7 +18504,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_kp_s_Cannot_index_with_type_s, __pyx_k_Cannot_index_with_type_s, sizeof(__pyx_k_Cannot_index_with_type_s), 0, 0, 1, 0},
   {&__pyx_n_s_Ellipsis, __pyx_k_Ellipsis, sizeof(__pyx_k_Ellipsis), 0, 0, 1, 1},
   {&__pyx_kp_s_Empty_shape_tuple_for_cython_arr, __pyx_k_Empty_shape_tuple_for_cython_arr, sizeof(__pyx_k_Empty_shape_tuple_for_cython_arr), 0, 0, 1, 0},
-  {&__pyx_n_s_GVisualizer, __pyx_k_GVisualizer, sizeof(__pyx_k_GVisualizer), 0, 0, 1, 1},
+  {&__pyx_n_s_GlimpseConstructor, __pyx_k_GlimpseConstructor, sizeof(__pyx_k_GlimpseConstructor), 0, 0, 1, 1},
   {&__pyx_kp_s_Incompatible_checksums_s_vs_0xb0, __pyx_k_Incompatible_checksums_s_vs_0xb0, sizeof(__pyx_k_Incompatible_checksums_s_vs_0xb0), 0, 0, 1, 0},
   {&__pyx_n_s_IndexError, __pyx_k_IndexError, sizeof(__pyx_k_IndexError), 0, 0, 1, 1},
   {&__pyx_kp_s_Indirect_dimensions_not_supporte, __pyx_k_Indirect_dimensions_not_supporte, sizeof(__pyx_k_Indirect_dimensions_not_supporte), 0, 0, 1, 0},
@@ -18761,27 +18962,27 @@ static int __Pyx_modinit_type_init_code(void) {
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__Pyx_modinit_type_init_code", 0);
   /*--- Type init code ---*/
-  __pyx_vtabptr_10visualizer_GVisualizer = &__pyx_vtable_10visualizer_GVisualizer;
-  __pyx_vtable_10visualizer_GVisualizer.setFeatureDimensions = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice))__pyx_f_10visualizer_11GVisualizer_setFeatureDimensions;
-  __pyx_vtable_10visualizer_GVisualizer.setOutputDimensions = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_10visualizer_11GVisualizer_setOutputDimensions;
-  __pyx_vtable_10visualizer_GVisualizer.populate_heatmaps = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t))__pyx_f_10visualizer_11GVisualizer_populate_heatmaps;
-  __pyx_vtable_10visualizer_GVisualizer.zeros = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t))__pyx_f_10visualizer_11GVisualizer_zeros;
-  __pyx_vtable_10visualizer_GVisualizer.max_elements = (int (*)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice, size_t))__pyx_f_10visualizer_11GVisualizer_max_elements;
-  __pyx_vtable_10visualizer_GVisualizer.set_ones = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int))__pyx_f_10visualizer_11GVisualizer_set_ones;
-  __pyx_vtable_10visualizer_GVisualizer.bb_dimensions = (std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  (*)(struct __pyx_obj_10visualizer_GVisualizer *, int, int, int, int, __Pyx_memviewslice, int))__pyx_f_10visualizer_11GVisualizer_bb_dimensions;
-  __pyx_vtable_10visualizer_GVisualizer.create_heatmaps = (void (*)(struct __pyx_obj_10visualizer_GVisualizer *, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_10visualizer_11GVisualizer_create_heatmaps;
-  __pyx_vtable_10visualizer_GVisualizer.convert_heatmap = (__Pyx_memviewslice (*)(struct __pyx_obj_10visualizer_GVisualizer *))__pyx_f_10visualizer_11GVisualizer_convert_heatmap;
-  if (PyType_Ready(&__pyx_type_10visualizer_GVisualizer) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_vtabptr_10visualizer_GlimpseConstructor = &__pyx_vtable_10visualizer_GlimpseConstructor;
+  __pyx_vtable_10visualizer_GlimpseConstructor.setFeatureDimensions = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice))__pyx_f_10visualizer_18GlimpseConstructor_setFeatureDimensions;
+  __pyx_vtable_10visualizer_GlimpseConstructor.setOutputDimensions = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_10visualizer_18GlimpseConstructor_setOutputDimensions;
+  __pyx_vtable_10visualizer_GlimpseConstructor.populate_heatmaps = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t))__pyx_f_10visualizer_18GlimpseConstructor_populate_heatmaps;
+  __pyx_vtable_10visualizer_GlimpseConstructor.zeros = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, size_t, size_t, size_t, size_t))__pyx_f_10visualizer_18GlimpseConstructor_zeros;
+  __pyx_vtable_10visualizer_GlimpseConstructor.max_elements = (int (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice, size_t))__pyx_f_10visualizer_18GlimpseConstructor_max_elements;
+  __pyx_vtable_10visualizer_GlimpseConstructor.set_ones = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __pyx_t_10visualizer_uchar ****&, int, int, int, int, int, int))__pyx_f_10visualizer_18GlimpseConstructor_set_ones;
+  __pyx_vtable_10visualizer_GlimpseConstructor.bb_dimensions = (std::pair<struct __pyx_t_10visualizer_Points,struct __pyx_t_10visualizer_Points>  (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, int, int, int, int, __Pyx_memviewslice, int))__pyx_f_10visualizer_18GlimpseConstructor_bb_dimensions;
+  __pyx_vtable_10visualizer_GlimpseConstructor.create_heatmaps = (void (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *, __Pyx_memviewslice, __Pyx_memviewslice))__pyx_f_10visualizer_18GlimpseConstructor_create_heatmaps;
+  __pyx_vtable_10visualizer_GlimpseConstructor.convert_heatmap = (__Pyx_memviewslice (*)(struct __pyx_obj_10visualizer_GlimpseConstructor *))__pyx_f_10visualizer_18GlimpseConstructor_convert_heatmap;
+  if (PyType_Ready(&__pyx_type_10visualizer_GlimpseConstructor) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
   #if PY_VERSION_HEX < 0x030800B1
-  __pyx_type_10visualizer_GVisualizer.tp_print = 0;
+  __pyx_type_10visualizer_GlimpseConstructor.tp_print = 0;
   #endif
-  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10visualizer_GVisualizer.tp_dictoffset && __pyx_type_10visualizer_GVisualizer.tp_getattro == PyObject_GenericGetAttr)) {
-    __pyx_type_10visualizer_GVisualizer.tp_getattro = __Pyx_PyObject_GenericGetAttr;
+  if ((CYTHON_USE_TYPE_SLOTS && CYTHON_USE_PYTYPE_LOOKUP) && likely(!__pyx_type_10visualizer_GlimpseConstructor.tp_dictoffset && __pyx_type_10visualizer_GlimpseConstructor.tp_getattro == PyObject_GenericGetAttr)) {
+    __pyx_type_10visualizer_GlimpseConstructor.tp_getattro = __Pyx_PyObject_GenericGetAttr;
   }
-  if (__Pyx_SetVtable(__pyx_type_10visualizer_GVisualizer.tp_dict, __pyx_vtabptr_10visualizer_GVisualizer) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_GVisualizer, (PyObject *)&__pyx_type_10visualizer_GVisualizer) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_10visualizer_GVisualizer) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
-  __pyx_ptype_10visualizer_GVisualizer = &__pyx_type_10visualizer_GVisualizer;
+  if (__Pyx_SetVtable(__pyx_type_10visualizer_GlimpseConstructor.tp_dict, __pyx_vtabptr_10visualizer_GlimpseConstructor) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (PyObject_SetAttr(__pyx_m, __pyx_n_s_GlimpseConstructor, (PyObject *)&__pyx_type_10visualizer_GlimpseConstructor) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_setup_reduce((PyObject*)&__pyx_type_10visualizer_GlimpseConstructor) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_ptype_10visualizer_GlimpseConstructor = &__pyx_type_10visualizer_GlimpseConstructor;
   __pyx_vtabptr_array = &__pyx_vtable_array;
   __pyx_vtable_array.get_memview = (PyObject *(*)(struct __pyx_array_obj *))__pyx_array_get_memview;
   if (PyType_Ready(&__pyx_type___pyx_array) < 0) __PYX_ERR(1, 105, __pyx_L1_error)
@@ -19623,6 +19824,318 @@ static CYTHON_INLINE void __Pyx_XDEC_MEMVIEW(__Pyx_memviewslice *memslice,
     }
 }
 
+/* PyDictVersioning */
+#if CYTHON_USE_DICT_VERSIONS && CYTHON_USE_TYPE_SLOTS
+static CYTHON_INLINE PY_UINT64_T __Pyx_get_tp_dict_version(PyObject *obj) {
+    PyObject *dict = Py_TYPE(obj)->tp_dict;
+    return likely(dict) ? __PYX_GET_DICT_VERSION(dict) : 0;
+}
+static CYTHON_INLINE PY_UINT64_T __Pyx_get_object_dict_version(PyObject *obj) {
+    PyObject **dictptr = NULL;
+    Py_ssize_t offset = Py_TYPE(obj)->tp_dictoffset;
+    if (offset) {
+#if CYTHON_COMPILING_IN_CPYTHON
+        dictptr = (likely(offset > 0)) ? (PyObject **) ((char *)obj + offset) : _PyObject_GetDictPtr(obj);
+#else
+        dictptr = _PyObject_GetDictPtr(obj);
+#endif
+    }
+    return (dictptr && *dictptr) ? __PYX_GET_DICT_VERSION(*dictptr) : 0;
+}
+static CYTHON_INLINE int __Pyx_object_dict_version_matches(PyObject* obj, PY_UINT64_T tp_dict_version, PY_UINT64_T obj_dict_version) {
+    PyObject *dict = Py_TYPE(obj)->tp_dict;
+    if (unlikely(!dict) || unlikely(tp_dict_version != __PYX_GET_DICT_VERSION(dict)))
+        return 0;
+    return obj_dict_version == __Pyx_get_object_dict_version(obj);
+}
+#endif
+
+/* GetModuleGlobalName */
+#if CYTHON_USE_DICT_VERSIONS
+static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_version, PyObject **dict_cached_value)
+#else
+static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name)
+#endif
+{
+    PyObject *result;
+#if !CYTHON_AVOID_BORROWED_REFS
+#if CYTHON_COMPILING_IN_CPYTHON && PY_VERSION_HEX >= 0x030500A1
+    result = _PyDict_GetItem_KnownHash(__pyx_d, name, ((PyASCIIObject *) name)->hash);
+    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
+    if (likely(result)) {
+        return __Pyx_NewRef(result);
+    } else if (unlikely(PyErr_Occurred())) {
+        return NULL;
+    }
+#else
+    result = PyDict_GetItem(__pyx_d, name);
+    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
+    if (likely(result)) {
+        return __Pyx_NewRef(result);
+    }
+#endif
+#else
+    result = PyObject_GetItem(__pyx_d, name);
+    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
+    if (likely(result)) {
+        return __Pyx_NewRef(result);
+    }
+    PyErr_Clear();
+#endif
+    return __Pyx_GetBuiltinName(name);
+}
+
+/* PyCFunctionFastCall */
+#if CYTHON_FAST_PYCCALL
+static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, PyObject **args, Py_ssize_t nargs) {
+    PyCFunctionObject *func = (PyCFunctionObject*)func_obj;
+    PyCFunction meth = PyCFunction_GET_FUNCTION(func);
+    PyObject *self = PyCFunction_GET_SELF(func);
+    int flags = PyCFunction_GET_FLAGS(func);
+    assert(PyCFunction_Check(func));
+    assert(METH_FASTCALL == (flags & ~(METH_CLASS | METH_STATIC | METH_COEXIST | METH_KEYWORDS | METH_STACKLESS)));
+    assert(nargs >= 0);
+    assert(nargs == 0 || args != NULL);
+    /* _PyCFunction_FastCallDict() must not be called with an exception set,
+       because it may clear it (directly or indirectly) and so the
+       caller loses its exception */
+    assert(!PyErr_Occurred());
+    if ((PY_VERSION_HEX < 0x030700A0) || unlikely(flags & METH_KEYWORDS)) {
+        return (*((__Pyx_PyCFunctionFastWithKeywords)(void*)meth)) (self, args, nargs, NULL);
+    } else {
+        return (*((__Pyx_PyCFunctionFast)(void*)meth)) (self, args, nargs);
+    }
+}
+#endif
+
+/* PyFunctionFastCall */
+#if CYTHON_FAST_PYCALL
+static PyObject* __Pyx_PyFunction_FastCallNoKw(PyCodeObject *co, PyObject **args, Py_ssize_t na,
+                                               PyObject *globals) {
+    PyFrameObject *f;
+    PyThreadState *tstate = __Pyx_PyThreadState_Current;
+    PyObject **fastlocals;
+    Py_ssize_t i;
+    PyObject *result;
+    assert(globals != NULL);
+    /* XXX Perhaps we should create a specialized
+       PyFrame_New() that doesn't take locals, but does
+       take builtins without sanity checking them.
+       */
+    assert(tstate != NULL);
+    f = PyFrame_New(tstate, co, globals, NULL);
+    if (f == NULL) {
+        return NULL;
+    }
+    fastlocals = __Pyx_PyFrame_GetLocalsplus(f);
+    for (i = 0; i < na; i++) {
+        Py_INCREF(*args);
+        fastlocals[i] = *args++;
+    }
+    result = PyEval_EvalFrameEx(f,0);
+    ++tstate->recursion_depth;
+    Py_DECREF(f);
+    --tstate->recursion_depth;
+    return result;
+}
+#if 1 || PY_VERSION_HEX < 0x030600B1
+static PyObject *__Pyx_PyFunction_FastCallDict(PyObject *func, PyObject **args, Py_ssize_t nargs, PyObject *kwargs) {
+    PyCodeObject *co = (PyCodeObject *)PyFunction_GET_CODE(func);
+    PyObject *globals = PyFunction_GET_GLOBALS(func);
+    PyObject *argdefs = PyFunction_GET_DEFAULTS(func);
+    PyObject *closure;
+#if PY_MAJOR_VERSION >= 3
+    PyObject *kwdefs;
+#endif
+    PyObject *kwtuple, **k;
+    PyObject **d;
+    Py_ssize_t nd;
+    Py_ssize_t nk;
+    PyObject *result;
+    assert(kwargs == NULL || PyDict_Check(kwargs));
+    nk = kwargs ? PyDict_Size(kwargs) : 0;
+    if (Py_EnterRecursiveCall((char*)" while calling a Python object")) {
+        return NULL;
+    }
+    if (
+#if PY_MAJOR_VERSION >= 3
+            co->co_kwonlyargcount == 0 &&
+#endif
+            likely(kwargs == NULL || nk == 0) &&
+            co->co_flags == (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)) {
+        if (argdefs == NULL && co->co_argcount == nargs) {
+            result = __Pyx_PyFunction_FastCallNoKw(co, args, nargs, globals);
+            goto done;
+        }
+        else if (nargs == 0 && argdefs != NULL
+                 && co->co_argcount == Py_SIZE(argdefs)) {
+            /* function called with no arguments, but all parameters have
+               a default value: use default values as arguments .*/
+            args = &PyTuple_GET_ITEM(argdefs, 0);
+            result =__Pyx_PyFunction_FastCallNoKw(co, args, Py_SIZE(argdefs), globals);
+            goto done;
+        }
+    }
+    if (kwargs != NULL) {
+        Py_ssize_t pos, i;
+        kwtuple = PyTuple_New(2 * nk);
+        if (kwtuple == NULL) {
+            result = NULL;
+            goto done;
+        }
+        k = &PyTuple_GET_ITEM(kwtuple, 0);
+        pos = i = 0;
+        while (PyDict_Next(kwargs, &pos, &k[i], &k[i+1])) {
+            Py_INCREF(k[i]);
+            Py_INCREF(k[i+1]);
+            i += 2;
+        }
+        nk = i / 2;
+    }
+    else {
+        kwtuple = NULL;
+        k = NULL;
+    }
+    closure = PyFunction_GET_CLOSURE(func);
+#if PY_MAJOR_VERSION >= 3
+    kwdefs = PyFunction_GET_KW_DEFAULTS(func);
+#endif
+    if (argdefs != NULL) {
+        d = &PyTuple_GET_ITEM(argdefs, 0);
+        nd = Py_SIZE(argdefs);
+    }
+    else {
+        d = NULL;
+        nd = 0;
+    }
+#if PY_MAJOR_VERSION >= 3
+    result = PyEval_EvalCodeEx((PyObject*)co, globals, (PyObject *)NULL,
+                               args, (int)nargs,
+                               k, (int)nk,
+                               d, (int)nd, kwdefs, closure);
+#else
+    result = PyEval_EvalCodeEx(co, globals, (PyObject *)NULL,
+                               args, (int)nargs,
+                               k, (int)nk,
+                               d, (int)nd, closure);
+#endif
+    Py_XDECREF(kwtuple);
+done:
+    Py_LeaveRecursiveCall();
+    return result;
+}
+#endif
+#endif
+
+/* PyObjectCall */
+#if CYTHON_COMPILING_IN_CPYTHON
+static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw) {
+    PyObject *result;
+    ternaryfunc call = Py_TYPE(func)->tp_call;
+    if (unlikely(!call))
+        return PyObject_Call(func, arg, kw);
+    if (unlikely(Py_EnterRecursiveCall((char*)" while calling a Python object")))
+        return NULL;
+    result = (*call)(func, arg, kw);
+    Py_LeaveRecursiveCall();
+    if (unlikely(!result) && unlikely(!PyErr_Occurred())) {
+        PyErr_SetString(
+            PyExc_SystemError,
+            "NULL result without error in PyObject_Call");
+    }
+    return result;
+}
+#endif
+
+/* PyObjectCall2Args */
+static CYTHON_UNUSED PyObject* __Pyx_PyObject_Call2Args(PyObject* function, PyObject* arg1, PyObject* arg2) {
+    PyObject *args, *result = NULL;
+    #if CYTHON_FAST_PYCALL
+    if (PyFunction_Check(function)) {
+        PyObject *args[2] = {arg1, arg2};
+        return __Pyx_PyFunction_FastCall(function, args, 2);
+    }
+    #endif
+    #if CYTHON_FAST_PYCCALL
+    if (__Pyx_PyFastCFunction_Check(function)) {
+        PyObject *args[2] = {arg1, arg2};
+        return __Pyx_PyCFunction_FastCall(function, args, 2);
+    }
+    #endif
+    args = PyTuple_New(2);
+    if (unlikely(!args)) goto done;
+    Py_INCREF(arg1);
+    PyTuple_SET_ITEM(args, 0, arg1);
+    Py_INCREF(arg2);
+    PyTuple_SET_ITEM(args, 1, arg2);
+    Py_INCREF(function);
+    result = __Pyx_PyObject_Call(function, args, NULL);
+    Py_DECREF(args);
+    Py_DECREF(function);
+done:
+    return result;
+}
+
+/* PyObjectCallMethO */
+#if CYTHON_COMPILING_IN_CPYTHON
+static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject *arg) {
+    PyObject *self, *result;
+    PyCFunction cfunc;
+    cfunc = PyCFunction_GET_FUNCTION(func);
+    self = PyCFunction_GET_SELF(func);
+    if (unlikely(Py_EnterRecursiveCall((char*)" while calling a Python object")))
+        return NULL;
+    result = cfunc(self, arg);
+    Py_LeaveRecursiveCall();
+    if (unlikely(!result) && unlikely(!PyErr_Occurred())) {
+        PyErr_SetString(
+            PyExc_SystemError,
+            "NULL result without error in PyObject_Call");
+    }
+    return result;
+}
+#endif
+
+/* PyObjectCallOneArg */
+#if CYTHON_COMPILING_IN_CPYTHON
+static PyObject* __Pyx__PyObject_CallOneArg(PyObject *func, PyObject *arg) {
+    PyObject *result;
+    PyObject *args = PyTuple_New(1);
+    if (unlikely(!args)) return NULL;
+    Py_INCREF(arg);
+    PyTuple_SET_ITEM(args, 0, arg);
+    result = __Pyx_PyObject_Call(func, args, NULL);
+    Py_DECREF(args);
+    return result;
+}
+static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {
+#if CYTHON_FAST_PYCALL
+    if (PyFunction_Check(func)) {
+        return __Pyx_PyFunction_FastCall(func, &arg, 1);
+    }
+#endif
+    if (likely(PyCFunction_Check(func))) {
+        if (likely(PyCFunction_GET_FLAGS(func) & METH_O)) {
+            return __Pyx_PyObject_CallMethO(func, arg);
+#if CYTHON_FAST_PYCCALL
+        } else if (__Pyx_PyFastCFunction_Check(func)) {
+            return __Pyx_PyCFunction_FastCall(func, &arg, 1);
+#endif
+        }
+    }
+    return __Pyx__PyObject_CallOneArg(func, arg);
+}
+#else
+static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {
+    PyObject *result;
+    PyObject *args = PyTuple_Pack(1, arg);
+    if (unlikely(!args)) return NULL;
+    result = __Pyx_PyObject_Call(func, args, NULL);
+    Py_DECREF(args);
+    return result;
+}
+#endif
+
 /* PyErrFetchRestore */
 #if CYTHON_FAST_THREAD_STATE
 static CYTHON_INLINE void __Pyx_ErrRestoreInState(PyThreadState *tstate, PyObject *type, PyObject *value, PyObject *tb) {
@@ -19688,87 +20201,6 @@ static void __Pyx_WriteUnraisable(const char *name, CYTHON_UNUSED int clineno,
         PyGILState_Release(state);
 #endif
 }
-
-/* PyDictVersioning */
-#if CYTHON_USE_DICT_VERSIONS && CYTHON_USE_TYPE_SLOTS
-static CYTHON_INLINE PY_UINT64_T __Pyx_get_tp_dict_version(PyObject *obj) {
-    PyObject *dict = Py_TYPE(obj)->tp_dict;
-    return likely(dict) ? __PYX_GET_DICT_VERSION(dict) : 0;
-}
-static CYTHON_INLINE PY_UINT64_T __Pyx_get_object_dict_version(PyObject *obj) {
-    PyObject **dictptr = NULL;
-    Py_ssize_t offset = Py_TYPE(obj)->tp_dictoffset;
-    if (offset) {
-#if CYTHON_COMPILING_IN_CPYTHON
-        dictptr = (likely(offset > 0)) ? (PyObject **) ((char *)obj + offset) : _PyObject_GetDictPtr(obj);
-#else
-        dictptr = _PyObject_GetDictPtr(obj);
-#endif
-    }
-    return (dictptr && *dictptr) ? __PYX_GET_DICT_VERSION(*dictptr) : 0;
-}
-static CYTHON_INLINE int __Pyx_object_dict_version_matches(PyObject* obj, PY_UINT64_T tp_dict_version, PY_UINT64_T obj_dict_version) {
-    PyObject *dict = Py_TYPE(obj)->tp_dict;
-    if (unlikely(!dict) || unlikely(tp_dict_version != __PYX_GET_DICT_VERSION(dict)))
-        return 0;
-    return obj_dict_version == __Pyx_get_object_dict_version(obj);
-}
-#endif
-
-/* GetModuleGlobalName */
-#if CYTHON_USE_DICT_VERSIONS
-static PyObject *__Pyx__GetModuleGlobalName(PyObject *name, PY_UINT64_T *dict_version, PyObject **dict_cached_value)
-#else
-static CYTHON_INLINE PyObject *__Pyx__GetModuleGlobalName(PyObject *name)
-#endif
-{
-    PyObject *result;
-#if !CYTHON_AVOID_BORROWED_REFS
-#if CYTHON_COMPILING_IN_CPYTHON && PY_VERSION_HEX >= 0x030500A1
-    result = _PyDict_GetItem_KnownHash(__pyx_d, name, ((PyASCIIObject *) name)->hash);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    } else if (unlikely(PyErr_Occurred())) {
-        return NULL;
-    }
-#else
-    result = PyDict_GetItem(__pyx_d, name);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    }
-#endif
-#else
-    result = PyObject_GetItem(__pyx_d, name);
-    __PYX_UPDATE_DICT_CACHE(__pyx_d, result, *dict_cached_value, *dict_version)
-    if (likely(result)) {
-        return __Pyx_NewRef(result);
-    }
-    PyErr_Clear();
-#endif
-    return __Pyx_GetBuiltinName(name);
-}
-
-/* PyObjectCall */
-#if CYTHON_COMPILING_IN_CPYTHON
-static CYTHON_INLINE PyObject* __Pyx_PyObject_Call(PyObject *func, PyObject *arg, PyObject *kw) {
-    PyObject *result;
-    ternaryfunc call = Py_TYPE(func)->tp_call;
-    if (unlikely(!call))
-        return PyObject_Call(func, arg, kw);
-    if (unlikely(Py_EnterRecursiveCall((char*)" while calling a Python object")))
-        return NULL;
-    result = (*call)(func, arg, kw);
-    Py_LeaveRecursiveCall();
-    if (unlikely(!result) && unlikely(!PyErr_Occurred())) {
-        PyErr_SetString(
-            PyExc_SystemError,
-            "NULL result without error in PyObject_Call");
-    }
-    return result;
-}
-#endif
 
 /* RaiseException */
 #if PY_MAJOR_VERSION < 3
@@ -19949,237 +20381,6 @@ static int __Pyx__ArgTypeTest(PyObject *obj, PyTypeObject *type, const char *nam
         name, type->tp_name, Py_TYPE(obj)->tp_name);
     return 0;
 }
-
-/* PyCFunctionFastCall */
-#if CYTHON_FAST_PYCCALL
-static CYTHON_INLINE PyObject * __Pyx_PyCFunction_FastCall(PyObject *func_obj, PyObject **args, Py_ssize_t nargs) {
-    PyCFunctionObject *func = (PyCFunctionObject*)func_obj;
-    PyCFunction meth = PyCFunction_GET_FUNCTION(func);
-    PyObject *self = PyCFunction_GET_SELF(func);
-    int flags = PyCFunction_GET_FLAGS(func);
-    assert(PyCFunction_Check(func));
-    assert(METH_FASTCALL == (flags & ~(METH_CLASS | METH_STATIC | METH_COEXIST | METH_KEYWORDS | METH_STACKLESS)));
-    assert(nargs >= 0);
-    assert(nargs == 0 || args != NULL);
-    /* _PyCFunction_FastCallDict() must not be called with an exception set,
-       because it may clear it (directly or indirectly) and so the
-       caller loses its exception */
-    assert(!PyErr_Occurred());
-    if ((PY_VERSION_HEX < 0x030700A0) || unlikely(flags & METH_KEYWORDS)) {
-        return (*((__Pyx_PyCFunctionFastWithKeywords)(void*)meth)) (self, args, nargs, NULL);
-    } else {
-        return (*((__Pyx_PyCFunctionFast)(void*)meth)) (self, args, nargs);
-    }
-}
-#endif
-
-/* PyFunctionFastCall */
-#if CYTHON_FAST_PYCALL
-static PyObject* __Pyx_PyFunction_FastCallNoKw(PyCodeObject *co, PyObject **args, Py_ssize_t na,
-                                               PyObject *globals) {
-    PyFrameObject *f;
-    PyThreadState *tstate = __Pyx_PyThreadState_Current;
-    PyObject **fastlocals;
-    Py_ssize_t i;
-    PyObject *result;
-    assert(globals != NULL);
-    /* XXX Perhaps we should create a specialized
-       PyFrame_New() that doesn't take locals, but does
-       take builtins without sanity checking them.
-       */
-    assert(tstate != NULL);
-    f = PyFrame_New(tstate, co, globals, NULL);
-    if (f == NULL) {
-        return NULL;
-    }
-    fastlocals = __Pyx_PyFrame_GetLocalsplus(f);
-    for (i = 0; i < na; i++) {
-        Py_INCREF(*args);
-        fastlocals[i] = *args++;
-    }
-    result = PyEval_EvalFrameEx(f,0);
-    ++tstate->recursion_depth;
-    Py_DECREF(f);
-    --tstate->recursion_depth;
-    return result;
-}
-#if 1 || PY_VERSION_HEX < 0x030600B1
-static PyObject *__Pyx_PyFunction_FastCallDict(PyObject *func, PyObject **args, Py_ssize_t nargs, PyObject *kwargs) {
-    PyCodeObject *co = (PyCodeObject *)PyFunction_GET_CODE(func);
-    PyObject *globals = PyFunction_GET_GLOBALS(func);
-    PyObject *argdefs = PyFunction_GET_DEFAULTS(func);
-    PyObject *closure;
-#if PY_MAJOR_VERSION >= 3
-    PyObject *kwdefs;
-#endif
-    PyObject *kwtuple, **k;
-    PyObject **d;
-    Py_ssize_t nd;
-    Py_ssize_t nk;
-    PyObject *result;
-    assert(kwargs == NULL || PyDict_Check(kwargs));
-    nk = kwargs ? PyDict_Size(kwargs) : 0;
-    if (Py_EnterRecursiveCall((char*)" while calling a Python object")) {
-        return NULL;
-    }
-    if (
-#if PY_MAJOR_VERSION >= 3
-            co->co_kwonlyargcount == 0 &&
-#endif
-            likely(kwargs == NULL || nk == 0) &&
-            co->co_flags == (CO_OPTIMIZED | CO_NEWLOCALS | CO_NOFREE)) {
-        if (argdefs == NULL && co->co_argcount == nargs) {
-            result = __Pyx_PyFunction_FastCallNoKw(co, args, nargs, globals);
-            goto done;
-        }
-        else if (nargs == 0 && argdefs != NULL
-                 && co->co_argcount == Py_SIZE(argdefs)) {
-            /* function called with no arguments, but all parameters have
-               a default value: use default values as arguments .*/
-            args = &PyTuple_GET_ITEM(argdefs, 0);
-            result =__Pyx_PyFunction_FastCallNoKw(co, args, Py_SIZE(argdefs), globals);
-            goto done;
-        }
-    }
-    if (kwargs != NULL) {
-        Py_ssize_t pos, i;
-        kwtuple = PyTuple_New(2 * nk);
-        if (kwtuple == NULL) {
-            result = NULL;
-            goto done;
-        }
-        k = &PyTuple_GET_ITEM(kwtuple, 0);
-        pos = i = 0;
-        while (PyDict_Next(kwargs, &pos, &k[i], &k[i+1])) {
-            Py_INCREF(k[i]);
-            Py_INCREF(k[i+1]);
-            i += 2;
-        }
-        nk = i / 2;
-    }
-    else {
-        kwtuple = NULL;
-        k = NULL;
-    }
-    closure = PyFunction_GET_CLOSURE(func);
-#if PY_MAJOR_VERSION >= 3
-    kwdefs = PyFunction_GET_KW_DEFAULTS(func);
-#endif
-    if (argdefs != NULL) {
-        d = &PyTuple_GET_ITEM(argdefs, 0);
-        nd = Py_SIZE(argdefs);
-    }
-    else {
-        d = NULL;
-        nd = 0;
-    }
-#if PY_MAJOR_VERSION >= 3
-    result = PyEval_EvalCodeEx((PyObject*)co, globals, (PyObject *)NULL,
-                               args, (int)nargs,
-                               k, (int)nk,
-                               d, (int)nd, kwdefs, closure);
-#else
-    result = PyEval_EvalCodeEx(co, globals, (PyObject *)NULL,
-                               args, (int)nargs,
-                               k, (int)nk,
-                               d, (int)nd, closure);
-#endif
-    Py_XDECREF(kwtuple);
-done:
-    Py_LeaveRecursiveCall();
-    return result;
-}
-#endif
-#endif
-
-/* PyObjectCall2Args */
-static CYTHON_UNUSED PyObject* __Pyx_PyObject_Call2Args(PyObject* function, PyObject* arg1, PyObject* arg2) {
-    PyObject *args, *result = NULL;
-    #if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(function)) {
-        PyObject *args[2] = {arg1, arg2};
-        return __Pyx_PyFunction_FastCall(function, args, 2);
-    }
-    #endif
-    #if CYTHON_FAST_PYCCALL
-    if (__Pyx_PyFastCFunction_Check(function)) {
-        PyObject *args[2] = {arg1, arg2};
-        return __Pyx_PyCFunction_FastCall(function, args, 2);
-    }
-    #endif
-    args = PyTuple_New(2);
-    if (unlikely(!args)) goto done;
-    Py_INCREF(arg1);
-    PyTuple_SET_ITEM(args, 0, arg1);
-    Py_INCREF(arg2);
-    PyTuple_SET_ITEM(args, 1, arg2);
-    Py_INCREF(function);
-    result = __Pyx_PyObject_Call(function, args, NULL);
-    Py_DECREF(args);
-    Py_DECREF(function);
-done:
-    return result;
-}
-
-/* PyObjectCallMethO */
-#if CYTHON_COMPILING_IN_CPYTHON
-static CYTHON_INLINE PyObject* __Pyx_PyObject_CallMethO(PyObject *func, PyObject *arg) {
-    PyObject *self, *result;
-    PyCFunction cfunc;
-    cfunc = PyCFunction_GET_FUNCTION(func);
-    self = PyCFunction_GET_SELF(func);
-    if (unlikely(Py_EnterRecursiveCall((char*)" while calling a Python object")))
-        return NULL;
-    result = cfunc(self, arg);
-    Py_LeaveRecursiveCall();
-    if (unlikely(!result) && unlikely(!PyErr_Occurred())) {
-        PyErr_SetString(
-            PyExc_SystemError,
-            "NULL result without error in PyObject_Call");
-    }
-    return result;
-}
-#endif
-
-/* PyObjectCallOneArg */
-#if CYTHON_COMPILING_IN_CPYTHON
-static PyObject* __Pyx__PyObject_CallOneArg(PyObject *func, PyObject *arg) {
-    PyObject *result;
-    PyObject *args = PyTuple_New(1);
-    if (unlikely(!args)) return NULL;
-    Py_INCREF(arg);
-    PyTuple_SET_ITEM(args, 0, arg);
-    result = __Pyx_PyObject_Call(func, args, NULL);
-    Py_DECREF(args);
-    return result;
-}
-static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {
-#if CYTHON_FAST_PYCALL
-    if (PyFunction_Check(func)) {
-        return __Pyx_PyFunction_FastCall(func, &arg, 1);
-    }
-#endif
-    if (likely(PyCFunction_Check(func))) {
-        if (likely(PyCFunction_GET_FLAGS(func) & METH_O)) {
-            return __Pyx_PyObject_CallMethO(func, arg);
-#if CYTHON_FAST_PYCCALL
-        } else if (__Pyx_PyFastCFunction_Check(func)) {
-            return __Pyx_PyCFunction_FastCall(func, &arg, 1);
-#endif
-        }
-    }
-    return __Pyx__PyObject_CallOneArg(func, arg);
-}
-#else
-static CYTHON_INLINE PyObject* __Pyx_PyObject_CallOneArg(PyObject *func, PyObject *arg) {
-    PyObject *result;
-    PyObject *args = PyTuple_Pack(1, arg);
-    if (unlikely(!args)) return NULL;
-    result = __Pyx_PyObject_Call(func, args, NULL);
-    Py_DECREF(args);
-    return result;
-}
-#endif
 
 /* BytesEquals */
 static CYTHON_INLINE int __Pyx_PyBytes_Equals(PyObject* s1, PyObject* s2, int equals) {
@@ -22482,6 +22683,18 @@ bad:
 }
 #endif
 
+/* MemviewDtypeToObject */
+  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_10visualizer_uchar(const char *itemp) {
+    return (PyObject *) __Pyx_PyInt_From_unsigned_char(*(__pyx_t_10visualizer_uchar *) itemp);
+}
+static CYTHON_INLINE int __pyx_memview_set_nn___pyx_t_10visualizer_uchar(const char *itemp, PyObject *obj) {
+    __pyx_t_10visualizer_uchar value = __Pyx_PyInt_As_unsigned_char(obj);
+    if ((value == (unsigned char)-1) && PyErr_Occurred())
+        return 0;
+    *(__pyx_t_10visualizer_uchar *) itemp = value;
+    return 1;
+}
+
 /* ObjectToMemviewSlice */
   static CYTHON_INLINE __Pyx_memviewslice __Pyx_PyObject_to_MemoryviewSlice_dsdsdsds_nn___pyx_t_10visualizer_uchar(PyObject *obj, int writable_flag) {
     __Pyx_memviewslice result = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -22503,18 +22716,6 @@ __pyx_fail:
     result.memview = NULL;
     result.data = NULL;
     return result;
-}
-
-/* MemviewDtypeToObject */
-  static CYTHON_INLINE PyObject *__pyx_memview_get_nn___pyx_t_10visualizer_uchar(const char *itemp) {
-    return (PyObject *) __Pyx_PyInt_From_unsigned_char(*(__pyx_t_10visualizer_uchar *) itemp);
-}
-static CYTHON_INLINE int __pyx_memview_set_nn___pyx_t_10visualizer_uchar(const char *itemp, PyObject *obj) {
-    __pyx_t_10visualizer_uchar value = __Pyx_PyInt_As_unsigned_char(obj);
-    if ((value == (unsigned char)-1) && PyErr_Occurred())
-        return 0;
-    *(__pyx_t_10visualizer_uchar *) itemp = value;
-    return 1;
 }
 
 /* MemviewSliceCopyTemplate */

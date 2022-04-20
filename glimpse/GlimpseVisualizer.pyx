@@ -13,7 +13,7 @@ cdef struct Points:
     int start
     int end
 
-cdef class GVisualizer:
+cdef class GlimpseConstructor:
     cdef:
         uchar **** heat_maps
         size_t dim1,dim2,dim3,dim4,images
@@ -125,8 +125,8 @@ cdef class GVisualizer:
 
         cdef:
             size_t i, j, k
-            float w_f, h_f, x_f, y_f, x_p, y_p
             int x,w,y,h
+            float x_c, y_c
             pair[Points, Points] dimensions
             double[:] bb_o
             int clip = 30, lab_t =0, lab_o=0
@@ -136,12 +136,15 @@ cdef class GVisualizer:
             h=0
             x=0
             y=0
-            x_p = 0.0
-            y_p = 0.0
-            x_f =0.0
-            w_f =0.0
-            y_f = 0.0
-            h_f =0.0
+            if(i>0):
+                if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+                    x_c = 0.0
+                else:
+                    x_c +=3.8
+                if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+                    y_c= 0.0
+                else:
+                    y_c += 1.5
             for j in range(self.images):
                 if(i<self.dim2):
                     lab_t = self.max_elements(labels[j,i,:], <int>self.dim1)
@@ -149,31 +152,35 @@ cdef class GVisualizer:
                         print("index labels ->", lab_t)
                 bb_o = positions[j,i,:]
                 dimensions = self.bb_dimensions(x,y,w,h,bb_o,clip)
-                x_f += (<float>dimensions.second.start) + x_p
-                w_f += (<float>dimensions.second.end )+ x_p
-                y_f += (<float>dimensions.first.start) + y_p
-                h_f += (<float>dimensions.first.end) + y_p
-                if(i>4):
-                    x_p+=0.1
-                    y_p +=0.03
-                elif(i==2):
-                    x_p+=0.06
-                    y_p +=0.03
-                elif(i==3):
-                    x_p +=0.08
-                    y_p +=0.03
-                elif(i==4):
-                    x_p +=0.09
-                    y_p +=0.03
-                else:
-                    x_p+=0.05
-                    y_p+=0.001
-            print(" dimensions ->", x_f//self.images, w_f//self.images, y_f//self.images, h_f//self.images, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
-            for k in range(self.dim1):
-                if (k == lab_t):
-                    self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images,<int> h_f//self.images)
-                else:
-                    self.set_ones(self.heat_maps, k, i, <int>x_f//self.images, <int>w_f//self.images, <int>y_f//self.images, <int>h_f//self.images)
+                x = <int>((<float>dimensions.second.start)+x_c)
+                w = <int>((<float>dimensions.second.end) + x_c)
+                y = <int>((<float>dimensions.first.start)+y_c)
+                h = <int>((<float>dimensions.first.end)+y_c)
+                if(x>self.dim3-1 or x>self.dim4-1 or w>self.dim3-1 or w>self.dim4-1):
+                    x_c = 0.0
+                if(y>self.dim3-1 or y>self.dim4-1 or h>self.dim3-1 or h>self.dim4-1):
+                    y_c= 0.0
+                print(" dimensions ->", lab_t, asarray(labels[j,i]), x, w, y, h, self.dim1, self.dim2, self.dim3, self.dim4, self.images)
+                for k in range(self.dim1):
+                    if(k>0 and i>0):
+                        if(k==1 or k==3):
+                            x +=15
+                            w +=15
+                            y +=16
+                            h +=16
+                            if (k == lab_t):
+                                self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+                            x -=15
+                            w -=15
+                            y -=16
+                            h -=16
+                        else:
+                            y+=2
+                            h+=2
+                            if (k == lab_t):
+                                self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
+                    elif (k == lab_t):
+                        self.set_ones(self.heat_maps, k, i, <int>x, <int>w, <int>y,<int> h)
 
     @boundscheck(False)
     @wraparound(False)

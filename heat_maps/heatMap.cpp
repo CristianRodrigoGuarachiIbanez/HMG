@@ -65,7 +65,7 @@ std::string extension(std::string file_name)
 }
 int main(){
     const char*m_directory = "/home/cristian/PycharmProjects/tEDRAM/tEDRAM2/images/";
-    const char *i_directory = "/home/cristian/PycharmProjects/tEDRAM/tEDRAM2/training_data/collisions/";
+    const char *i_directory = "/home/cristian/PycharmProjects/tEDRAM/tEDRAM2/training_data/emotions/";
 /*
 
     const fs::path dir{ "./" };
@@ -76,10 +76,10 @@ int main(){
 */
     std::vector<std::string>masks = listdir(m_directory);
     std::vector<std::string>images = listdir(i_directory);
-    std::string output = "/home/cristian/PycharmProjects/tEDRAM/tEDRAM2/training_data/final/";
+    std::string output = "/home/cristian/PycharmProjects/tEDRAM/tEDRAM2/training_data/final_emo/";
     std::cout<<masks.size()<<" "<< images.size()<<std::endl;
     if(masks.size()==images.size()){
-        double scale_down = 0.5;
+        double scale_down = 1.0; //1.0 is 100%
         std::string mask_directory = std::string(m_directory);
         std::string image_directory = std::string(i_directory);
         std::cout<<masks.size()<<" "<< images.size()<<std::endl;
@@ -89,7 +89,7 @@ int main(){
                  std::string ext1 = extension(image_directory+images[j]);
                  if(ext1==ext2){
                      std::cout << image_directory+images[j]<< "  "<< mask_directory+masks[i]<< '\n';
-                     heatmap::HeatMaps loader(image_directory+images[j], mask_directory+masks[i], 120,240, 13, 110, 60,187);
+                     heatmap::HeatMaps loader(image_directory+images[j], mask_directory+masks[i], 100,100, 0, 100, 0,100); //100,100, 13, 110, 60,187);
                      cv::Mat heatMap = loader.getBlendedImg();
                      cv::Mat scaled;
                      cv::resize(heatMap,scaled, cv::Size(), scale_down, scale_down, cv::INTER_LINEAR);
